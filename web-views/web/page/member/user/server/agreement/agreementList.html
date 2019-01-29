@@ -1,0 +1,12 @@
+@widget('web:header/header')<div class='user-wrapper clearfix'>  @widget('web:usersider/index')<div class="user-right"><div class="agreement-wrapper"><h2 class="tit">合同备案</h2><a class="tit-right clearfix" href="/pc/user/beian/detail"><i class="iconfont icon-faqibeian_detail_air color-white"></i><span>发起备案</span></a><div class="agreement-list"><ul class="agreement-title clearfix"><li>合同编号</li><li>合同起始日</li><li>合同终止日</li><li>房源坐落</li><li>承租方</li><li>出租方</li><li>创建时间</li><li>备案状态</li><li>操作</li></ul><div class="agreement-container clearfix"></div></div><div class='pager-list' id='J_pagenation'></div></div><div class="cancel-toast" id="cancelHeyanToast" style="display: none;"><div class="toast-wrap"><div class="toast-box"><div class="close-btn">+</div><h2>取消房源核验</h2><P>信息还未进行房源核验，是否确认取消？</P><button class="btn cancel-button">我再想想</button><button class="btn confirm-button">确认取消</button></div></div></div><div class="cancel-toast" id="cancelBeianToast" style="display: none;"><div class="toast-wrap"><div class="toast-box"><div class="close-btn">+</div><h2>取消备案确认</h2><P>是否确认取消这次备案？</P><button class="btn cancel-button">我再想想</button><button class="btn confirm-button">确认取消</button></div></div></div></div><script type="text/javascript">
+    window.configPager = {
+        currentPage: "1",
+        totalPage: "5",
+        pageSize: "1000",
+        fillingListUrl:'/web/contract/filling/list',
+        userInfo:'/web/account/C/baseinfoC',
+        verifyCancel:'/web/contract/filling/verifyCancel/', //取消核验
+        recordCancel:'/web/contract/filling/recordCancel/' //取消备案
+    };
+    require.async('web:static/member/user/server/agreement/agreementList.js');
+</script></div> @widget('web:footer/footer')

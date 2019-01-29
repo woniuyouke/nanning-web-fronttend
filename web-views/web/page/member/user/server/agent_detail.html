@@ -1,0 +1,8 @@
+@widget('web:header/header')<div class='user-wrapper clearfix'>  @widget('web:usersider/index')<div class="user-right"><div class="agent-wrapper"><h2 class="tit">企业人员列表</h2><div class="agent-detail-list"><ul class="detail-title clearfix"><li>姓名</li><li>执业证书编号</li><li>企业名称</li><li>移动电话</li></ul><div class="get-data clearfix"><div class="get-data-left">找到符合要求的数据<span class="num">0</span>条</div><div class="get-data-right clearfix"><div class="pagenation" id='agent_detail_pagenation'></div></div></div></div></div></div></div><script>
+    window.configPager = {
+        agentDetailUrl:'/web/account/info/CList',
+        id:"<?php echo strFilterHtml($_GET['id']) ?>",
+        page:"<?php echo strFilterHtml($_GET['page']) ?>",
+    };
+    require.async('web:static/member/user/server/agent/agentDetail.js');
+</script> @widget('web:footer/footer')

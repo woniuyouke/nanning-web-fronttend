@@ -1,0 +1,3061 @@
+{
+    "common:components/dictionary/dictionary.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/dictionary/dictionary_e75d7d4.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/dictionary/enum.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/dictionary/enum_83ff392.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/jquery/jquery.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/jquery/jquery_0f6b1d8.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/jsencrypt/jsencrypt.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/jsencrypt/jsencrypt_1b9f084.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcthird-party/cookie/cookie.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcthird-party/cookie/cookie_64915d4.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcthird-party/dropload/dropload.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcthird-party/dropload/dropload_3fffe4d.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcthird-party/dropload/dropload.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcthird-party/dropload/dropload_fc30852.js",
+        "deps": [
+            "common:components/pcthird-party/dropload/dropload.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcthird-party/echarts/echarts - 副本.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcthird-party/echarts/echarts - 副本_2db93f4.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcthird-party/echarts/echarts.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcthird-party/echarts/echarts_2adec27.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcthird-party/flex/data-flex.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcthird-party/flex/data-flex_2d63fe1.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcthird-party/flex/flex.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcthird-party/flex/flex_568c893.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcthird-party/jquery-qrcode/jquery.qrcode.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcthird-party/jquery-qrcode/jquery.qrcode.min_f27243e.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcthird-party/lazyload/lazyload.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcthird-party/lazyload/lazyload_6f69235.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcthird-party/mobiScroll/mobiScroll.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcthird-party/mobiScroll/mobiScroll_e8a1e64.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcthird-party/mobiScroll/mobiScroll.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcthird-party/mobiScroll/mobiScroll_056559b.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/pcthird-party/mobiScroll/mobiScroll.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcthird-party/mobiScroll/mobiscroll.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcthird-party/mobiScroll/mobiscroll.min_e8a1e64.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcthird-party/moment/moment.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcthird-party/moment/moment_5f46102.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcthird-party/newSwiper/newSwiper.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcthird-party/newSwiper/newSwiper_feb707f.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcthird-party/newSwiper/newSwiper.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcthird-party/newSwiper/newSwiper_b551b1a.js",
+        "deps": [
+            "common:components/pcthird-party/newSwiper/newSwiper.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcthird-party/nstSlider/jquery.nstSlider.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcthird-party/nstSlider/jquery.nstSlider_8f29491.js",
+        "deps": [
+            "common:components/ui/jquery/jquery-1.11.0.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcthird-party/swiper/swiper.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcthird-party/swiper/swiper_c064b4a.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcthird-party/swiper/swiper.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcthird-party/swiper/swiper_b9f36f3.js",
+        "deps": [
+            "common:components/pcthird-party/swiper/swiper.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcthird-party/swipeSlide/swipeSlide.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcthird-party/swipeSlide/swipeSlide_51dfe3a.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/alert/alert.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/alert/alert_ad89a68.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcUI/alert/alert.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/alert/alert_605bc0a.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/alert/alert.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/baiduMap/baiduMap.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/baiduMap/baiduMap_c40df44.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/tips/tips.js",
+            "common:components/pcUI/template/template.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/bootstrap-datetimepicker/bootstrap-datetimepicker.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/bootstrap-datetimepicker/bootstrap-datetimepicker_daaeaca.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcUI/bootstrap-datetimepicker/bootstrap-datetimepicker.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/bootstrap-datetimepicker/bootstrap-datetimepicker_5085e49.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/bootstrap-datetimepicker/bootstrap-datetimepicker.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/bootstrap-datetimepicker/bootstrap.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/bootstrap-datetimepicker/bootstrap_459d5c0.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcUI/bootstrap-datetimepicker/bootstrap.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/bootstrap-datetimepicker/bootstrap_8bfd106.js",
+        "deps": [
+            "common:components/pcUI/bootstrap-datetimepicker/bootstrap.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/calendar/calendar.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/calendar/calendar_0d687bc.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcUI/calendar/calendar.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/calendar/calendar_37b1ea8.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/class/class.js",
+            "common:components/pcUI/util/util.js",
+            "common:components/pcUI/droplist/droplist.js",
+            "common:components/pcUI/calendar/calendar.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/class/class.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/class/class_66d43be.js",
+        "deps": [
+            "common:components/jquery/jquery.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/cookie/cookie.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/cookie/cookie_1f7ae34.js",
+        "deps": [
+            "common:components/jquery/jquery.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/cuteTips/cuteTips.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/cuteTips/cuteTips_c20d562.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcUI/cuteTips/cuteTips.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/cuteTips/cuteTips_e15eace.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/class/class.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/cuteTips/cuteTips.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/datepicker/datepicker.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/datepicker/datepicker_1246824.js",
+        "deps": [
+            "common:components/pcUI/calendar/calendar.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/dialog/dialog.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/dialog/dialog_9fea0ea.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcUI/dialog/dialog.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/dialog/dialog_bcf9163.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/class/class.js",
+            "common:components/pcUI/mask/mask.js",
+            "common:components/pcUI/dialog/dialog.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/draggable/draggable.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/draggable/draggable_c4500b8.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/class/class.js",
+            "common:components/pcUI/util/util.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/droplist/droplist.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/droplist/droplist_a46f03b.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcUI/droplist/droplist.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/droplist/droplist_2439bc6.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/class/class.js",
+            "common:components/pcUI/droplist/droplist.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/formValid/formValid.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/formValid/formValid_4a03a33.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcUI/formValid/formValid.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/formValid/formValid_8ab55cd.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/class/class.js",
+            "common:components/pcUI/formValid/formValid.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/getQueryString/getQueryString.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/getQueryString/getQueryString_f2bd98e.js",
+        "deps": [
+            "common:components/jquery/jquery.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/lightbox/lightbox.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/lightbox/lightbox_2709962.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcUI/lightbox/lightbox.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/lightbox/lightbox_398022a.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/class/class.js",
+            "common:components/pcUI/mask/mask.js",
+            "common:components/pcUI/lightbox/lightbox.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/mask/mask.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/mask/mask_4858f27.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcUI/mask/mask.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/mask/mask_364c6c7.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/class/class.js",
+            "common:components/pcUI/mask/mask.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/nstSlider/jquery.nstSlider.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/nstSlider/jquery.nstSlider_81e13b3.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/nstSlider/nouislider.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/nstSlider/nouislider_e784e39.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/pager/pager.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/pager/pager_9d318dd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcUI/pager/pager.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/pager/pager_072bc59.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/class/class.js",
+            "common:components/pcUI/pager/pager.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/placeholder/placeholder.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/placeholder/placeholder_c31e8a3.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcUI/placeholder/placeholder.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/placeholder/placeholder_8101d48.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/class/class.js",
+            "common:components/pcUI/placeholder/placeholder.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/slider/slider.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/slider/slider_43eaf20.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/class/class.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/suggestion/suggestion.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/suggestion/suggestion_ca8442d.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcUI/suggestion/suggestion.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/suggestion/suggestion_216b16e.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/class/class.js",
+            "common:components/pcUI/util/util.js",
+            "common:components/pcUI/suggestion/suggestion.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/tabs/tabs.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/tabs/tabs_ef1e782.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/class/class.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/template/template.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/template/template_ceb3eae.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/tips/tips.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/tips/tips_edcfd21.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcUI/tips/tips.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/tips/tips_1aad75b.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/class/class.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/tips/tips.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/tooltip/tooltip.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/tooltip/tooltip_271a236.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcUI/tooltip/tooltip.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/tooltip/tooltip_97d6816.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/class/class.js",
+            "common:components/pcUI/tooltip/tooltip.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/uploader/lib/uploadify.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/uploader/lib/uploadify_a852766.js",
+        "deps": [
+            "common:components/jquery/jquery.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/uploader/uploader.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/uploader/uploader_200fdb7.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/pcUI/uploader/uploader.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/uploader/uploader_ea9d07f.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/class/class.js",
+            "common:components/pcUI/cookie/cookie.js",
+            "common:components/pcUI/uploader/lib/uploadify.js",
+            "common:components/pcUI/uploader/uploader.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/util/date.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/util/date_c339eaf.js",
+        "deps": [
+            "common:components/pcUI/util/string.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/util/lib/base64.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/util/lib/base64_4e7648f.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/util/lib/crypto.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/util/lib/crypto_0734d8f.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/util/lib/json2.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/util/lib/json2_8c25905.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/util/number.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/util/number_75cc528.js",
+        "deps": [
+            "common:components/pcUI/util/string.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/util/object.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/util/object_46bcffa.js",
+        "deps": [
+            "common:components/pcUI/util/lib/json2.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/util/string.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/util/string_a688ef3.js",
+        "deps": [
+            "common:components/pcUI/util/lib/crypto.js",
+            "common:components/pcUI/util/lib/base64.js",
+            "common:components/pcUI/util/object.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/pcUI/util/util.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/pcUI/util/util_498e6c4.js",
+        "deps": [
+            "common:components/pcUI/util/object.js",
+            "common:components/pcUI/util/number.js",
+            "common:components/pcUI/util/string.js",
+            "common:components/pcUI/util/date.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/previewImg/previewImg.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/previewImg/previewImg_abba175.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/publickey/publickey.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/publickey/publickey_bf2b389.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/test/index.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/test/index_02387d9.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/third-party/cookie/cookie.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/cookie/cookie_b2f3c5d.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/third-party/dropload/dropload.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/dropload/dropload_3fffe4d.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/third-party/dropload/dropload.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/dropload/dropload_9e67ef1.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/third-party/dropload/dropload.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/third-party/echarts/echarts - 副本.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/echarts/echarts - 副本_9d02ef8.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/third-party/echarts/echarts.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/echarts/echarts_77a0152.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/third-party/flex/data-flex.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/flex/data-flex_2d63fe1.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/third-party/flex/flex.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/flex/flex_568c893.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/third-party/jquery-qrcode/jquery.qrcode.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/jquery-qrcode/jquery.qrcode.min_ebbef92.js",
+        "deps": [
+            "common:components/jquery/jquery.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/third-party/lazyload/lazyload.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/lazyload/lazyload_73063a7.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/third-party/md5/md5.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/md5/md5_a1172cb.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/third-party/mobiScroll/mobiScroll.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/mobiScroll/mobiScroll_df2b0e7.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/third-party/mobiScroll/mobiScroll.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/mobiScroll/mobiScroll_3d2dc30.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/third-party/mobiScroll/mobiScroll.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/third-party/mobiScroll/mobiscroll.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/mobiScroll/mobiscroll.min_df2b0e7.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/third-party/moment/moment.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/moment/moment_ce9b5e5.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/third-party/newSwiper/newSwiper.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/newSwiper/newSwiper_feb707f.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/third-party/newSwiper/newSwiper.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/newSwiper/newSwiper_1c6d65a.js",
+        "deps": [
+            "common:components/third-party/newSwiper/newSwiper.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/third-party/nstSlider/jquery.nstSlider.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/nstSlider/jquery.nstSlider_79cb14f.js",
+        "deps": [
+            "common:components/ui/jquery/jquery-1.11.0.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/third-party/pcswiper/swiper.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/pcswiper/swiper_6c3c577.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/third-party/pcswiper/swiper.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/pcswiper/swiper_48aaf15.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/third-party/pcswiper/swiper.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/third-party/swiper/swiper.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/swiper/swiper_6c3c577.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/third-party/swiper/swiper.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/swiper/swiper_9505fbe.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "common:components/third-party/swiper/swiper.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/third-party/swipeSlide/swipeSlide.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/third-party/swipeSlide/swipeSlide_9918a18.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/authAjax/authAjax.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/authAjax/authAjax_847e189.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/baiduMap/baiduMap.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/baiduMap/baiduMap_b062813.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/ui/tips/tips.js",
+            "common:components/ui/template/template.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/class/class.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/class/class_c946236.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/dialog/dialog.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/dialog/dialog_86a0d44.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/ui/dialog/dialog.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/dialog/dialog_1d82853.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/ui/class/class.js",
+            "common:components/ui/mask/mask.js",
+            "common:components/ui/iscroll/iscroll.js",
+            "common:components/ui/dialog/dialog.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/exif/exif.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/exif/exif_b44922b.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/formValid/formValid.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/formValid/formValid_387101f.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/ui/formValid/formValid.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/formValid/formValid_bac82ef.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/ui/class/class.js",
+            "common:components/ui/formValid/formValid.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/getQueryString/getQueryString.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/getQueryString/getQueryString_cdc6e85.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/imgUpload/imgUpload.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/imgUpload/imgUpload_db4fa13.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/ui/class/class.js",
+            "common:components/ui/tips/tips.js",
+            "common:components/ui/exif/exif.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/iscroll/iscroll.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/iscroll/iscroll_41b5e43.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/jquery/jquery-1.11.0.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/jquery/jquery-1.11.0_a5b4ba0.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/jumpUrlWithReturn/jumpUrlWithReturn.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/jumpUrlWithReturn/jumpUrlWithReturn_3e05e35.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/ui/getQueryString/getQueryString.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/loading/loading.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/loading/loading_ef535d0.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/ui/loading/loading.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/loading/loading_5fb9468.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/ui/loading/loading.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/mask/mask.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/mask/mask_4dfe246.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/ui/mask/mask.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/mask/mask_0732922.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/ui/class/class.js",
+            "common:components/ui/mask/mask.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/nstSlider/jquery.nstSlider.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/nstSlider/jquery.nstSlider_22afd7c.js",
+        "deps": [
+            "common:components/jquery/jquery.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/nstSlider/nouislider.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/nstSlider/nouislider_ec4f7ed.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/numberInput/numberInput.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/numberInput/numberInput_c1d1f5e.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/ui/numberInput/numberInput.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/numberInput/numberInput_59994bb.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/ui/numberInput/numberInput.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/placeholder/placeholder.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/placeholder/placeholder_5588000.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/ui/placeholder/placeholder.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/placeholder/placeholder_d5df926.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/ui/class/class.js",
+            "common:components/ui/placeholder/placeholder.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/showErrorMsg/showErrorMsg.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/showErrorMsg/showErrorMsg_680399b.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/ui/tips/tips.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/tabs/tabs.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/tabs/tabs_0924077.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/ui/class/class.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/template/template.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/template/template_d79f092.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/tips/tips.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/tips/tips_c55966a.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/ui/tips/tips.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/tips/tips_94a16c4.js",
+        "deps": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/ui/class/class.js",
+            "common:components/ui/dialog/dialog.js",
+            "common:components/ui/tips/tips.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/util/date.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/util/date_c9748b1.js",
+        "deps": [
+            "common:components/ui/util/string.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/util/lib/base64.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/util/lib/base64_3abb9e2.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/util/lib/crypto.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/util/lib/crypto_67007c4.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/util/number.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/util/number_ac62619.js",
+        "deps": [
+            "common:components/ui/util/string.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/util/object.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/util/object_cd9c381.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/util/storage.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/util/storage_4413d29.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/util/string.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/util/string_8ca57bd.js",
+        "deps": [
+            "common:components/ui/util/lib/crypto.js",
+            "common:components/ui/util/lib/base64.js",
+            "common:components/ui/util/object.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/util/util.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/util/util_f791c5b.js",
+        "deps": [
+            "common:components/ui/util/object.js",
+            "common:components/ui/util/number.js",
+            "common:components/ui/util/string.js",
+            "common:components/ui/util/date.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/ui/zepto/zepto.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/ui/zepto/zepto_7c48e80.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vue_router/vue-router.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vue_router/vue-router_b783723.js",
+        "pkg": "common:components/vr.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vue/vue.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vue/vue_aac2942.js",
+        "pkg": "common:components/vr.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vuex/vuex.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vuex/vuex_0c89fa8.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/actionsheet/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/actionsheet/index.min_76c8e75.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/actionsheet/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/actionsheet/index.min_ae6118f.js",
+        "deps": [
+            "common:components/vux/components/actionsheet/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/agree/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/agree/index.min_fcc768b.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/agree/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/agree/index.min_9653b50.js",
+        "deps": [
+            "common:components/vux/components/agree/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/alert-module/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/alert-module/index.min_515a295.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/alert-module/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/alert-module/index.min_02e67a8.js",
+        "deps": [
+            "common:components/vux/components/alert-module/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/alert/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/alert/index.min_515a295.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/alert/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/alert/index.min_ad0a69a.js",
+        "deps": [
+            "common:components/vux/components/alert/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/badge/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/badge/index.min_7e314b3.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/badge/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/badge/index.min_8700d87.js",
+        "deps": [
+            "common:components/vux/components/badge/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/blur/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/blur/index.min_1b1f5ef.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/blur/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/blur/index.min_1319002.js",
+        "deps": [
+            "common:components/vux/components/blur/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/box/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/box/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/box/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/box/index.min_6e9c6d2.js",
+        "deps": [
+            "common:components/vux/components/box/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/button-tab-item/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/button-tab-item/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/button-tab-item/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/button-tab-item/index.min_8825dd5.js",
+        "deps": [
+            "common:components/vux/components/button-tab-item/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/button-tab-pack/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/button-tab-pack/index.min_d2d10fe.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/button-tab-pack/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/button-tab-pack/index.min_0024812.js",
+        "deps": [
+            "common:components/vux/components/button-tab-pack/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/button-tab/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/button-tab/index.min_d2d10fe.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/button-tab/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/button-tab/index.min_025ebc6.js",
+        "deps": [
+            "common:components/vux/components/button-tab/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/calendar/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/calendar/index.min_cad5368.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/calendar/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/calendar/index.min_b459b52.js",
+        "deps": [
+            "common:components/vux/components/calendar/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/card/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/card/index.min_589fd98.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/card/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/card/index.min_1651c1a.js",
+        "deps": [
+            "common:components/vux/components/card/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/cell-box/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/cell-box/index.min_0884d16.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/cell-box/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/cell-box/index.min_62edad1.js",
+        "deps": [
+            "common:components/vux/components/cell-box/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/cell-form-preview/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/cell-form-preview/index.min_81329c0.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/cell-form-preview/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/cell-form-preview/index.min_16eacca.js",
+        "deps": [
+            "common:components/vux/components/cell-form-preview/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/cell/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/cell/index.min_c34d36c.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/cell/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/cell/index.min_3383686.js",
+        "deps": [
+            "common:components/vux/components/cell/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/check-icon/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/check-icon/index.min_1f92dcf.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/check-icon/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/check-icon/index.min_d536745.js",
+        "deps": [
+            "common:components/vux/components/check-icon/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/checker-item/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/checker-item/index.min_fe0d87c.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/checker-item/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/checker-item/index.min_631a4a0.js",
+        "deps": [
+            "common:components/vux/components/checker-item/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/checker-pack/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/checker-pack/index.min_4ce7931.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/checker-pack/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/checker-pack/index.min_97b6889.js",
+        "deps": [
+            "common:components/vux/components/checker-pack/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/checker/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/checker/index.min_c057922.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/checker/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/checker/index.min_869c180.js",
+        "deps": [
+            "common:components/vux/components/checker/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/checklist/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/checklist/index.min_dfc35d1.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/checklist/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/checklist/index.min_6cf8884.js",
+        "deps": [
+            "common:components/vux/components/checklist/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/clocker/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/clocker/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/clocker/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/clocker/index.min_3d21b08.js",
+        "deps": [
+            "common:components/vux/components/clocker/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/color-picker/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/color-picker/index.min_11bc3c8.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/color-picker/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/color-picker/index.min_9a7adaf.js",
+        "deps": [
+            "common:components/vux/components/color-picker/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/confirm/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/confirm/index.min_991868c.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/confirm/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/confirm/index.min_193bbfb.js",
+        "deps": [
+            "common:components/vux/components/confirm/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/countdown/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/countdown/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/countdown/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/countdown/index.min_7204803.js",
+        "deps": [
+            "common:components/vux/components/countdown/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/countup/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/countup/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/countup/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/countup/index.min_e623bc4.js",
+        "deps": [
+            "common:components/vux/components/countup/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/dateformat/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/dateformat/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/dateformat/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/dateformat/index.min_9627410.js",
+        "deps": [
+            "common:components/vux/components/dateformat/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/daterange/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/daterange/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/daterange/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/daterange/index.min_f078872.js",
+        "deps": [
+            "common:components/vux/components/daterange/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/datetime-range/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/datetime-range/index.min_80e8da0.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/datetime-range/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/datetime-range/index.min_d9fbf7d.js",
+        "deps": [
+            "common:components/vux/components/datetime-range/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/datetime-view/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/datetime-view/index.min_cc55a9e.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/datetime-view/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/datetime-view/index.min_a7a1a6c.js",
+        "deps": [
+            "common:components/vux/components/datetime-view/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/datetime/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/datetime/index.min_cc55a9e.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/datetime/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/datetime/index.min_a2965be.js",
+        "deps": [
+            "common:components/vux/components/datetime/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/debounce/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/debounce/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/debounce/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/debounce/index.min_98c1d75.js",
+        "deps": [
+            "common:components/vux/components/debounce/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/divider/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/divider/index.min_605d239.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/divider/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/divider/index.min_a46f661.js",
+        "deps": [
+            "common:components/vux/components/divider/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/drawer/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/drawer/index.min_223c411.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/drawer/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/drawer/index.min_53f8bf1.js",
+        "deps": [
+            "common:components/vux/components/drawer/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/flexbox-item/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/flexbox-item/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/flexbox-item/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/flexbox-item/index.min_a4f757f.js",
+        "deps": [
+            "common:components/vux/components/flexbox-item/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/flexbox-pack/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/flexbox-pack/index.min_b5bed44.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/flexbox-pack/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/flexbox-pack/index.min_95e961f.js",
+        "deps": [
+            "common:components/vux/components/flexbox-pack/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/flexbox/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/flexbox/index.min_b5bed44.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/flexbox/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/flexbox/index.min_db780de.js",
+        "deps": [
+            "common:components/vux/components/flexbox/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/flow-line/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/flow-line/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/flow-line/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/flow-line/index.min_5b7e9be.js",
+        "deps": [
+            "common:components/vux/components/flow-line/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/flow-pack/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/flow-pack/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/flow-state/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/flow-state/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/flow-state/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/flow-state/index.min_27242aa.js",
+        "deps": [
+            "common:components/vux/components/flow-state/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/flow/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/flow/index.min_5bbfcec.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/flow/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/flow/index.min_09636a5.js",
+        "deps": [
+            "common:components/vux/components/flow/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/form-preview/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/form-preview/index.min_0c96cbf.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/form-preview/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/form-preview/index.min_eca3127.js",
+        "deps": [
+            "common:components/vux/components/form-preview/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/fullpage/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/fullpage/index.min_ab8ad39.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/fullpage/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/fullpage/index.min_3ac68bf.js",
+        "deps": [
+            "common:components/vux/components/fullpage/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/grid-item/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/grid-item/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/grid-item/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/grid-item/index.min_60a79ba.js",
+        "deps": [
+            "common:components/vux/components/grid-item/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/grid-pack/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/grid-pack/index.min_d2b7e91.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/grid-pack/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/grid-pack/index.min_762e898.js",
+        "deps": [
+            "common:components/vux/components/grid-pack/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/grid/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/grid/index.min_d2b7e91.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/grid/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/grid/index.min_72a5734.js",
+        "deps": [
+            "common:components/vux/components/grid/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/group-title/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/group-title/index.min_283a171.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/group-title/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/group-title/index.min_ee98597.js",
+        "deps": [
+            "common:components/vux/components/group-title/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/group/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/group/index.min_97fca9a.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/group/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/group/index.min_341074d.js",
+        "deps": [
+            "common:components/vux/components/group/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/icon/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/icon/index.min_6989089.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/icon/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/icon/index.min_0c1069a.js",
+        "deps": [
+            "common:components/vux/components/icon/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/inline-calendar/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/inline-calendar/index.min_f914b65.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/inline-calendar/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/inline-calendar/index.min_105d1b9.js",
+        "deps": [
+            "common:components/vux/components/inline-calendar/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/inline-desc/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/inline-desc/index.min_8259531.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/inline-desc/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/inline-desc/index.min_9af730f.js",
+        "deps": [
+            "common:components/vux/components/inline-desc/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/inline-loading/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/inline-loading/index.min_8bc7bbf.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/inline-loading/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/inline-loading/index.min_449587a.js",
+        "deps": [
+            "common:components/vux/components/inline-loading/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/inline-x-number/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/inline-x-number/index.min_63aa31f.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/inline-x-number/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/inline-x-number/index.min_c51f593.js",
+        "deps": [
+            "common:components/vux/components/inline-x-number/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/load-more/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/load-more/index.min_f447492.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/load-more/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/load-more/index.min_85dd7d7.js",
+        "deps": [
+            "common:components/vux/components/load-more/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/loading/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/loading/index.min_d4864e3.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/loading/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/loading/index.min_b37330a.js",
+        "deps": [
+            "common:components/vux/components/loading/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/marquee-item/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/marquee-item/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/marquee-item/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/marquee-item/index.min_1aa662c.js",
+        "deps": [
+            "common:components/vux/components/marquee-item/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/marquee-pack/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/marquee-pack/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/marquee/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/marquee/index.min_8565c54.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/marquee/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/marquee/index.min_884d419.js",
+        "deps": [
+            "common:components/vux/components/marquee/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/masker/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/masker/index.min_0745157.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/masker/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/masker/index.min_08b3d67.js",
+        "deps": [
+            "common:components/vux/components/masker/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/msg/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/msg/index.min_8501f27.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/msg/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/msg/index.min_c514cf0.js",
+        "deps": [
+            "common:components/vux/components/msg/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/panel/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/panel/index.min_8f56b48.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/panel/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/panel/index.min_f23eabc.js",
+        "deps": [
+            "common:components/vux/components/panel/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/picker/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/picker/index.min_1b936f0.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/picker/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/picker/index.min_04c8f99.js",
+        "deps": [
+            "common:components/vux/components/picker/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/popover/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/popover/index.min_ef627e9.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/popover/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/popover/index.min_4c8e65b.js",
+        "deps": [
+            "common:components/vux/components/popover/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/popup-header/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/popup-header/index.min_de0ba96.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/popup-header/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/popup-header/index.min_4904a6c.js",
+        "deps": [
+            "common:components/vux/components/popup-header/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/popup-picker/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/popup-picker/index.min_80e8da0.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/popup-picker/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/popup-picker/index.min_a4f40e9.js",
+        "deps": [
+            "common:components/vux/components/popup-picker/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/popup-radio/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/popup-radio/index.min_6646c70.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/popup-radio/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/popup-radio/index.min_38d2c40.js",
+        "deps": [
+            "common:components/vux/components/popup-radio/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/popup/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/popup/index.min_b1bd0ee.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/popup/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/popup/index.min_e1fcc98.js",
+        "deps": [
+            "common:components/vux/components/popup/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/previewer/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/previewer/index.min_23e9abe.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/previewer/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/previewer/index.min_39b9e70.js",
+        "deps": [
+            "common:components/vux/components/previewer/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/qrcode/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/qrcode/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/qrcode/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/qrcode/index.min_278ce39.js",
+        "deps": [
+            "common:components/vux/components/qrcode/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/querystring/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/querystring/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/querystring/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/querystring/index.min_8157471.js",
+        "deps": [
+            "common:components/vux/components/querystring/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/radio/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/radio/index.min_e9b46a9.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/radio/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/radio/index.min_0a3d4a9.js",
+        "deps": [
+            "common:components/vux/components/radio/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/range/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/range/index.min_5342318.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/range/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/range/index.min_8497d10.js",
+        "deps": [
+            "common:components/vux/components/range/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/rater/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/rater/index.min_eee1183.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/rater/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/rater/index.min_dea4707.js",
+        "deps": [
+            "common:components/vux/components/rater/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/scroller/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/scroller/index.min_5289370.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/scroller/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/scroller/index.min_92c7ff9.js",
+        "deps": [
+            "common:components/vux/components/scroller/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/search/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/search/index.min_8fda019.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/search/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/search/index.min_e7b18b4.js",
+        "deps": [
+            "common:components/vux/components/search/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/selector/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/selector/index.min_97c5446.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/selector/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/selector/index.min_9b522c6.js",
+        "deps": [
+            "common:components/vux/components/selector/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/shake/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/shake/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/shake/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/shake/index.min_db943eb.js",
+        "deps": [
+            "common:components/vux/components/shake/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/spinner/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/spinner/index.min_7cf44d2.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/spinner/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/spinner/index.min_f6f1f90.js",
+        "deps": [
+            "common:components/vux/components/spinner/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/step-item/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/step-item/index.min_6989089.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/step-item/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/step-item/index.min_9686c3c.js",
+        "deps": [
+            "common:components/vux/components/step-item/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/step-pack/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/step-pack/index.min_7ead9e4.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/step-pack/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/step-pack/index.min_9332355.js",
+        "deps": [
+            "common:components/vux/components/step-pack/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/step/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/step/index.min_66b866f.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/step/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/step/index.min_796db5b.js",
+        "deps": [
+            "common:components/vux/components/step/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/sticky/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/sticky/index.min_3fca79d.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/sticky/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/sticky/index.min_f788abe.js",
+        "deps": [
+            "common:components/vux/components/sticky/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/stringtrim/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/stringtrim/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/stringtrim/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/stringtrim/index.min_def8628.js",
+        "deps": [
+            "common:components/vux/components/stringtrim/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/swipeout-button/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/swipeout-button/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/swipeout-button/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/swipeout-button/index.min_8c2e941.js",
+        "deps": [
+            "common:components/vux/components/swipeout-button/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/swipeout-item/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/swipeout-item/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/swipeout-item/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/swipeout-item/index.min_88b73f8.js",
+        "deps": [
+            "common:components/vux/components/swipeout-item/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/swipeout-pack/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/swipeout-pack/index.min_75ba9d3.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/swipeout-pack/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/swipeout-pack/index.min_fbab017.js",
+        "deps": [
+            "common:components/vux/components/swipeout-pack/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/swipeout/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/swipeout/index.min_75ba9d3.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/swipeout/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/swipeout/index.min_7d6a47f.js",
+        "deps": [
+            "common:components/vux/components/swipeout/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/swiper-item/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/swiper-item/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/swiper-item/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/swiper-item/index.min_891928d.js",
+        "deps": [
+            "common:components/vux/components/swiper-item/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/swiper/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/swiper/index.min_3b50f14.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/swiper/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/swiper/index.min_7382749.js",
+        "deps": [
+            "common:components/vux/components/swiper/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/tab-item/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/tab-item/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/tab-item/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/tab-item/index.min_5a4adf6.js",
+        "deps": [
+            "common:components/vux/components/tab-item/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/tab-pack/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/tab-pack/index.min_10b3e73.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/tab-pack/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/tab-pack/index.min_32c2af6.js",
+        "deps": [
+            "common:components/vux/components/tab-pack/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/tab/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/tab/index.min_10b3e73.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/tab/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/tab/index.min_43a682e.js",
+        "deps": [
+            "common:components/vux/components/tab/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/tabbar-item/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/tabbar-item/index.min_7e314b3.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/tabbar-item/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/tabbar-item/index.min_961932b.js",
+        "deps": [
+            "common:components/vux/components/tabbar-item/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/tabbar-pack/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/tabbar-pack/index.min_4ac21bf.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/tabbar-pack/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/tabbar-pack/index.min_e47a083.js",
+        "deps": [
+            "common:components/vux/components/tabbar-pack/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/tabbar/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/tabbar/index.min_73c7632.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/tabbar/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/tabbar/index.min_9e65274.js",
+        "deps": [
+            "common:components/vux/components/tabbar/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/throttle/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/throttle/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/throttle/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/throttle/index.min_6c012b7.js",
+        "deps": [
+            "common:components/vux/components/throttle/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/timeline/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/timeline/index.min_5270f37.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/timeline/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/timeline/index.min_00d1fb8.js",
+        "deps": [
+            "common:components/vux/components/timeline/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/tip/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/tip/index.min_eccbf05.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/tip/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/tip/index.min_0f7e563.js",
+        "deps": [
+            "common:components/vux/components/tip/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/toast/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/toast/index.min_53714ac.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/toast/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/toast/index.min_4a56b77.js",
+        "deps": [
+            "common:components/vux/components/toast/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/transfer-dom/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/transfer-dom/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/transfer-dom/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/transfer-dom/index.min_03a14b4.js",
+        "deps": [
+            "common:components/vux/components/transfer-dom/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/trim/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/trim/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/trim/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/trim/index.min_8762e74.js",
+        "deps": [
+            "common:components/vux/components/trim/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/video/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/video/index.min_8a7e306.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/video/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/video/index.min_0fd72f5.js",
+        "deps": [
+            "common:components/vux/components/video/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/view-box/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/view-box/index.min_884880e.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/view-box/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/view-box/index.min_bb167c0.js",
+        "deps": [
+            "common:components/vux/components/view-box/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/wechat-emotion/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/wechat-emotion/index.min_014e1f1.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/wechat-emotion/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/wechat-emotion/index.min_2ebe17c.js",
+        "deps": [
+            "common:components/vux/components/wechat-emotion/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/week-calendar/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/week-calendar/index.min_7de8315.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/week-calendar/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/week-calendar/index.min_4c8be57.js",
+        "deps": [
+            "common:components/vux/components/week-calendar/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/wepay-input/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/wepay-input/index.min_455b460.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/wepay-input/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/wepay-input/index.min_637d55b.js",
+        "deps": [
+            "common:components/vux/components/wepay-input/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/x-address/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-address/index.min_80e8da0.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/x-address/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-address/index.min_8fee470.js",
+        "deps": [
+            "common:components/vux/components/x-address/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/x-button/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-button/index.min_9a5df54.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/x-button/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-button/index.min_88c8247.js",
+        "deps": [
+            "common:components/vux/components/x-button/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/x-circle/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-circle/index.min_4be0932.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/x-circle/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-circle/index.min_e34132b.js",
+        "deps": [
+            "common:components/vux/components/x-circle/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/x-dialog/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-dialog/index.min_fffbc09.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/x-dialog/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-dialog/index.min_0859276.js",
+        "deps": [
+            "common:components/vux/components/x-dialog/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/x-header/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-header/index.min_2367705.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/x-header/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-header/index.min_0c642a5.js",
+        "deps": [
+            "common:components/vux/components/x-header/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/x-hr/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-hr/index.min_d5472ab.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/x-hr/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-hr/index.min_2641917.js",
+        "deps": [
+            "common:components/vux/components/x-hr/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/x-icon/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-icon/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/x-img/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-img/index.min_9ddd137.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/x-img/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-img/index.min_63c51ae.js",
+        "deps": [
+            "common:components/vux/components/x-img/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/x-input/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-input/index.min_c019b5d.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/x-input/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-input/index.min_68e62bb.js",
+        "deps": [
+            "common:components/vux/components/x-input/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/x-number/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-number/index.min_ed6e916.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/x-number/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-number/index.min_6e318ed.js",
+        "deps": [
+            "common:components/vux/components/x-number/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/x-progress/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-progress/index.min_75cedb7.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/x-progress/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-progress/index.min_f5e7be1.js",
+        "deps": [
+            "common:components/vux/components/x-progress/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/x-switch/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-switch/index.min_ab2d4af.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/x-switch/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-switch/index.min_ebf46de.js",
+        "deps": [
+            "common:components/vux/components/x-switch/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/x-table/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-table/index.min_1829bf2.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/x-table/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-table/index.min_bb538d1.js",
+        "deps": [
+            "common:components/vux/components/x-table/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/components/x-textarea/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-textarea/index.min_194f0ac.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/components/x-textarea/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/components/x-textarea/index.min_eb9b244.js",
+        "deps": [
+            "common:components/vux/components/x-textarea/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/plugins/ajax/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/plugins/ajax/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/plugins/ajax/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/plugins/ajax/index.min_6868b2d.js",
+        "deps": [
+            "common:components/vux/plugins/ajax/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/plugins/alert/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/plugins/alert/index.min_515a295.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/plugins/alert/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/plugins/alert/index.min_0a8ab17.js",
+        "deps": [
+            "common:components/vux/plugins/alert/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/plugins/confirm/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/plugins/confirm/index.min_991868c.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/plugins/confirm/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/plugins/confirm/index.min_3d048e6.js",
+        "deps": [
+            "common:components/vux/plugins/confirm/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/plugins/device/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/plugins/device/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/plugins/device/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/plugins/device/index.min_d81772e.js",
+        "deps": [
+            "common:components/vux/plugins/device/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/plugins/loading/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/plugins/loading/index.min_d4864e3.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/plugins/loading/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/plugins/loading/index.min_4b26af5.js",
+        "deps": [
+            "common:components/vux/plugins/loading/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/plugins/toast/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/plugins/toast/index.min_53714ac.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/plugins/toast/index.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/plugins/toast/index.min_ee7a0d3.js",
+        "deps": [
+            "common:components/vux/plugins/toast/index.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:components/vux/plugins/wechat/index.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/plugins/wechat/index.min_d41d8cd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/styles/1px.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/styles/1px_f88ba74.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/styles/blank.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/styles/blank_2ef1d9c.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/styles/center.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/styles/center_01cba4c.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/styles/close.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/styles/close_b43dd6c.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/styles/loading.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/styles/loading_e16c9d5.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/styles/reddot.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/styles/reddot_8448047.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/styles/reset.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/styles/reset_014651b.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/styles/tap.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/styles/tap_174aacd.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/styles/transition.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/styles/transition_c70ed0f.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/vux.min.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/vux.min_d493ef6.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "common:components/vux/vux.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vux/vux.min_9367d32.js",
+        "deps": [
+            "common:components/vux/vux.min.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "common:index.html": {
+        "css": [
+            "common:static/index.css"
+        ],
+        "asyncs": [
+            "common:static/index.js",
+            "static/pagelet.js"
+        ],
+        "refs": [
+            "common:pagelet/bigrender/bigrender.html",
+            "common:layout.html"
+        ]
+    },
+    "common:static/index.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/index_0d9bb24.css",
+        "type": "css"
+    },
+    "common:pagelet/ajax/ajax.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/pl_/ajax/ajax_dfd4503.css",
+        "isPagelet": true,
+        "type": "css"
+    },
+    "common:pagelet/ajax/ajax.html": {
+        "css": [
+            "common:pagelet/ajax/ajax.css"
+        ],
+        "asyncs": [
+            "static/pagelet.js"
+        ],
+        "isPagelet": true
+    },
+    "common:pagelet/bigrender/bigrender.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/pl_/bigrender/bigrender_1e333e6.css",
+        "isPagelet": true,
+        "type": "css"
+    },
+    "common:pagelet/bigrender/bigrender.html": {
+        "css": [
+            "common:pagelet/bigrender/bigrender.css"
+        ],
+        "asyncs": [
+            "common:pagelet/bigrender/bigrender.js",
+            "static/pagelet.js"
+        ],
+        "isPagelet": true
+    },
+    "common:pagelet/bigrender/bigrender.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/pl_/bigrender/bigrender_2db042b.js",
+        "isPagelet": true,
+        "type": "js"
+    },
+    "common:polyfill.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/s_/polyfill.min_75764af.js",
+        "type": "js"
+    },
+    "common:static/h5/common/base.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/h5/common/base_4fe8c1b.css",
+        "type": "css"
+    },
+    "common:static/h5/common/common.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/h5/common/common_9c6bc73.css",
+        "type": "css"
+    },
+    "common:static/h5/common/evercookie.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/h5/common/evercookie_e15a6a6.js",
+        "type": "js",
+        "useJsWraper": false
+    },
+    "common:static/h5/common/rem.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/h5/common/rem_775312c.js",
+        "type": "js",
+        "useJsWraper": false
+    },
+    "common:static/h5/common/swfobject-2.2.min.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/h5/common/swfobject-2.2.min_5fb5452.js",
+        "type": "js",
+        "useJsWraper": false
+    },
+    "common:static/h5/common/theme.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/h5/common/theme_86b6983.css",
+        "type": "css"
+    },
+    "common:static/h5/common/tj.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/h5/common/tj_a56c0e3.js",
+        "type": "js",
+        "useJsWraper": false
+    },
+    "common:static/h5/common/util.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/h5/common/util_38351a0.css",
+        "type": "css"
+    },
+    "common:static/h5/common/wxshare/jweixin-1.0.0.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/h5/common/wxshare/jweixin-1.0.0_499dfb4.js",
+        "type": "js",
+        "useJsWraper": false
+    },
+    "common:static/h5/common/wxshare/wx-share.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/h5/common/wxshare/wx-share_bdfa859.js",
+        "asyncs": [
+            "common:components/ui/zepto/zepto.js"
+        ],
+        "type": "js",
+        "useJsWraper": false
+    },
+    "common:static/h5/lothar.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/h5/lothar_cae29ee.js",
+        "type": "js"
+    },
+    "common:static/iconfont/demo.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/iconfont/demo_fb5cee8.css",
+        "type": "css"
+    },
+    "common:static/iconfont/iconfont.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/iconfont/iconfont_60e0b1f.css",
+        "type": "css"
+    },
+    "common:static/iconfont/iconfont.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/iconfont/iconfont_09f2779.js",
+        "type": "js"
+    },
+    "common:static/index.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/index_982a894.js",
+        "type": "js"
+    },
+    "common:widget/h5/feedback/feedback.html": {
+        "css": [
+            "common:widget/h5/feedback/feedback.less"
+        ],
+        "isWidget": true
+    },
+    "common:widget/h5/feedback/feedback.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/w_/h5/feedback/feedback_a7ffb8f.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "common:widget/h5/footer/footer.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/w_/h5/footer/footer_b7acd94.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "common:widget/h5/footer/footer.html": {
+        "bottomJs": [
+            "common:static/h5/common/tj.js"
+        ],
+        "css": [
+            "common:widget/h5/footer/footer.css"
+        ],
+        "asyncs": [
+            "common:widget/h5/footer/footer.js"
+        ],
+        "isWidget": true
+    },
+    "common:widget/h5/footer/footer.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/w_/h5/footer/footer_0ac5751.js",
+        "isWidget": true,
+        "type": "js"
+    },
+    "common:widget/h5/gotop/gotop.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/w_/h5/gotop/gotop_d5ba0bc.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "common:widget/h5/gotop/gotop.html": {
+        "css": [
+            "common:widget/h5/gotop/gotop.css"
+        ],
+        "asyncs": [
+            "common:widget/h5/gotop/gotop.js"
+        ],
+        "isWidget": true
+    },
+    "common:widget/h5/gotop/gotop.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/w_/h5/gotop/gotop_60410ed.js",
+        "asyncs": [
+            "common:components/ui/zepto/zepto.js"
+        ],
+        "isWidget": true,
+        "type": "js"
+    },
+    "common:widget/h5/guid/guid.html": {
+        "asyncs": [
+            "common:widget/h5/guid/guid.js"
+        ],
+        "isWidget": true
+    },
+    "common:widget/h5/guid/guid.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/w_/h5/guid/guid_c2844fa.js",
+        "asyncs": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/ui/util/util.js",
+            "common:static/h5/common/swfobject-2.2.min.js",
+            "common:static/h5/common/evercookie.js"
+        ],
+        "isWidget": true,
+        "type": "js"
+    },
+    "common:widget/h5/header/header-szevent.html": {
+        "headJs": [
+            "common:static/h5/lothar.js",
+            "common:static/h5/common/rem.js"
+        ],
+        "css": [
+            "common:static/h5/common/base.css",
+            "common:static/h5/common/common.css",
+            "common:static/iconfont/iconfont.css"
+        ],
+        "isWidget": true
+    },
+    "common:widget/h5/header/header.html": {
+        "headJs": [
+            "common:static/h5/lothar.js",
+            "common:static/h5/common/rem.js"
+        ],
+        "css": [
+            "common:static/h5/common/base.css",
+            "common:static/h5/common/common.css",
+            "common:static/iconfont/iconfont.css"
+        ],
+        "isWidget": true
+    },
+    "common:widget/h5/loading_spinner/loading_spinner.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/w_/h5/loading_spinner/loading_spinner_06f91d5.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "common:widget/h5/loading_spinner/loading_spinner.html": {
+        "css": [
+            "common:widget/h5/loading_spinner/loading_spinner.css"
+        ],
+        "isWidget": true
+    },
+    "common:widget/h5/location/location.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/w_/h5/location/location_19a54d0.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "common:widget/h5/location/location.html": {
+        "css": [
+            "common:widget/h5/location/location.css"
+        ],
+        "asyncs": [
+            "common:widget/h5/location/location.js"
+        ],
+        "isWidget": true
+    },
+    "common:widget/h5/location/location.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/w_/h5/location/location_47b0ce5.js",
+        "isWidget": true,
+        "type": "js"
+    },
+    "common:widget/h5/menu/menu.html": {
+        "css": [
+            "common:widget/h5/menu/menu.less"
+        ],
+        "asyncs": [
+            "common:widget/h5/menu/menu.js"
+        ],
+        "isWidget": true
+    },
+    "common:widget/h5/menu/menu.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/w_/h5/menu/menu_5a74a20.js",
+        "asyncs": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/ui/iscroll/iscroll.js"
+        ],
+        "isWidget": true,
+        "type": "js"
+    },
+    "common:widget/h5/menu/menu.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/w_/h5/menu/menu_f872fc3.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "common:widget/h5/nav/nav.html": {
+        "css": [
+            "common:widget/h5/nav/nav.less"
+        ],
+        "asyncs": [
+            "common:widget/h5/nav/nav.js"
+        ],
+        "isWidget": true
+    },
+    "common:widget/h5/nav/nav.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/w_/h5/nav/nav_ca52ad5.js",
+        "asyncs": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/ui/iscroll/iscroll.js"
+        ],
+        "isWidget": true,
+        "type": "js"
+    },
+    "common:widget/h5/nav/nav.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/w_/h5/nav/nav_85923f7.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "common:widget/h5/nps/nps.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/w_/h5/nps/nps_6ba14fb.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "common:widget/h5/nps/nps.html": {
+        "css": [
+            "common:widget/h5/nps/nps.css"
+        ],
+        "asyncs": [
+            "common:widget/h5/nps/nps.js"
+        ],
+        "isWidget": true
+    },
+    "common:widget/h5/nps/nps.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/w_/h5/nps/nps_cf14196.js",
+        "asyncs": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/ui/dialog/dialog.js",
+            "common:components/ui/template/template.js"
+        ],
+        "isWidget": true,
+        "type": "js"
+    },
+    "common:widget/h5/nps/nps.tpl": {
+        "isWidget": true
+    },
+    "common:widget/h5/searchTab/searchTab.html": {
+        "css": [
+            "common:widget/h5/searchTab/searchTab.less"
+        ],
+        "asyncs": [
+            "common:widget/h5/searchTab/searchTab.js"
+        ],
+        "refs": [
+            "common:widget/h5/searchTab/templete.html"
+        ],
+        "isWidget": true
+    },
+    "common:widget/h5/searchTab/searchTab.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/w_/h5/searchTab/searchTab_d37b403.js",
+        "asyncs": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/ui/nstSlider/nouislider.js"
+        ],
+        "isWidget": true,
+        "type": "js"
+    },
+    "common:widget/h5/searchTab/searchTab.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/w_/h5/searchTab/searchTab_87d9b22.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "common:widget/h5/searchTab/templete.html": {
+        "isWidget": true
+    },
+    "common:widget/h5/sidebar/sidebar.html": {
+        "css": [
+            "common:widget/h5/sidebar/sidebar.less"
+        ],
+        "isWidget": true
+    },
+    "common:widget/h5/sidebar/sidebar.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/w_/h5/sidebar/sidebar_9aa9bcb.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "common:widget/h5/uploadapp/uploadapp.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/w_/h5/uploadapp/uploadapp_aa6bcc4.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "common:widget/h5/uploadapp/uploadapp.html": {
+        "css": [
+            "common:widget/h5/uploadapp/uploadapp.css"
+        ],
+        "asyncs": [
+            "common:widget/h5/uploadapp/uploadapp.js"
+        ],
+        "isWidget": true
+    },
+    "common:widget/h5/uploadapp/uploadapp.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/w_/h5/uploadapp/uploadapp_3cf876a.js",
+        "asyncs": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/third-party/cookie/cookie.js"
+        ],
+        "isWidget": true,
+        "type": "js"
+    },
+    "static/feather.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/feather_4105b42.js",
+        "type": "js"
+    },
+    "static/pagelet.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/pagelet_3eb05f0.js",
+        "type": "js"
+    },
+    "common:components/vr.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/common/c_/vr_e928dc3.js",
+        "isPkg": true,
+        "has": [
+            "common:components/vue/vue.js",
+            "common:components/vue_router/vue-router.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    }
+}

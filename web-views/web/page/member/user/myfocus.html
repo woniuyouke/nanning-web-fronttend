@@ -1,0 +1,10 @@
+@widget('web:header/header')<div class='user-wrapper clearfix'> @widget('web:usersider/index')<div class='user-right'><div class='house-list'><ul class='nav clearfix'><li class='nav-child current' data-type="1"><a href='javascript:;'>市场房源</a></li><li class='nav-child' data-type="4"><a>国有房源</a></li></ul></div><ul class='house-list-wrapper' id='J_house_list'></ul><div style='display:none;' class='no-data' id='J_no_info'><p><img src="//{{$DOMAIN_STATIC}}/govzf/web/member/user/schedule/Rectangle 10@2x_0f0dd95.png"></p><p>您还没有关注的<span id="J_type_name"></span></p></div><div id='J_pagenation' class='pager-list'></div></div></div><script>
+	window.configPager = {
+		houseListUrl: '/pc/api/follow/list',
+		deleteHouseUrl: '/pc/api/follow/cancel'
+	};
+	require.async('web:static/member/user/myfocus.js');
+	var iconOneUrl = "//{{$DOMAIN_STATIC}}/govzf/web/zf/markeylist/img/icon_yhy_c556134.png";
+	var iconTwoUrl = "//{{$DOMAIN_STATIC}}/govzf/web/zf/markeylist/img/landlord_ff45291.png";
+
+</script> @widget('web:footer/footer')

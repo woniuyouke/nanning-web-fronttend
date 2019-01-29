@@ -1,0 +1,6 @@
+<div class="footer-wrapper"><div class="footer-wrap"><div class="footer"><div class="footer-link"><p><a href='/pc/user/member/agreement'>用户协议</a><a href='{{$xinlong["headSideMenu"]["moreNewsUrl"] or ""}}'>租房动态</a><a href='{{$xinlong["headSideMenu"]["commonListUrl"] or ""}}'>我要找房</a><a href="/pc/publishHouse/edit?id=">我要发房</a><a href="http://zulin.nnfcxx.com:8080/erp/index/housing/list" target="_blank">企业入口</a><a href="javascript:;" target="_blank" id="J_operator_help">操作指南</a></p></div><div class="footer-info"><p class="info">南宁市住房租赁服务监管平台<br/>备案号：桂ICP备 11004866 号-2<br/>南宁市住房局房产信息管理服务中心 版权所有 未经许可不得引用或转载，否则依法追究法律责任</p><div class="clearfix footer-contact"><div class="iconfont icon-footer_call"></div><p>业务咨询，请联系：</p><p class="strong">0771-5656948</p><p>咨询时间：工作日9:00-12:00 13:30-17:30</p></div><div class="clearfix footer-contact wx hide"><div class="iconfont icon-wechat_ic"></div><p>微信公众号</p><p class="strong">{{$configure['fullName']['value'] or ''}}</p></div></div></div><div class="qr-wrap"><img src="{{$footerData['sQrTouchWeb'] or ''}}"></div></div><script>
+        var helpPdfUrl = '//{{$DOMAIN_STATIC}}/govzf/web/help-nanning_756102a.pdf';
+        require.async('web:widget/footer/footer.js');
+    </script></div>
+@include('common._static_', ['type' => 'bottom'])
+</body></html>

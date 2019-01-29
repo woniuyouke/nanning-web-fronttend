@@ -1,0 +1,190 @@
+@widget('web:meta/meta')<?php
+$moduleConfig = $_SERVER['F_GlobalData']['moduleConfig'];
+$configure = $_SERVER['F_GlobalData']['configure'];
+?><div id="wDialog" class="w-dia"><a href="javascript:void(0);" class="ui2-dialog-close">&times;</a><div class="ui2-dialog-content"><div class="warnin"><img src="//{{$DOMAIN_STATIC}}/govzf/web/w_/header/image/warn_92c8e84.png"></div><p class="tips">亲，您当前的浏览器版本过低，可能存在安全风险！</p><p class="txt">为了得到我们网站最好的体验效果，我们建议您升级到最新版本的Internet&nbsp;Explorer，或选择另外一个浏览器</p><div class="a-box"><a href="http://rj.baidu.com/soft/detail/14744.html?ald" class="chr" target="_blank"><img src="//{{$DOMAIN_STATIC}}/govzf/web/w_/header/image/chr_0544be7.png"><p class="browser">Chrome</p></a><a href="http://www.firefox.com.cn/#desktop" class="ff" target="_blank"><img src="//{{$DOMAIN_STATIC}}/govzf/web/w_/header/image/ff_4a4095c.png"><p class="browser">Firefox</p></a><a href="http://rj.baidu.com/soft/detail/23253.html" class="ie" target="_blank"><div class="ie-box"><img src="//{{$DOMAIN_STATIC}}/govzf/web/w_/header/image/ie_ca324f4.png"></div><p class="browser">Internet&nbsp;Explorer</p></a><span class="huo">或</span><div class="co-box"><div class="code"><img src="//{{$DOMAIN_STATIC}}/govzf/web/w_/header/image/code_a680fec.png"></div><p>扫描二维码，下载平安好房APP</p></div></div></div></div><div class="notice"></div></div><?php
+//配置
+
+//导航
+$nav = array(
+    array(
+        'name' => '选房网首页',
+        'url' => 'http://www.nnfcxx.com',
+        'show' => true,
+        'target' => '_blank',
+        'subNav' => array()
+    ),
+    array(
+        'name' => '租赁主页',
+        'url' => $xinlong["headSideMenu"]["homeUrl"],
+        'show' => true,
+        'sub-nav' => array()
+    ),
+    array(
+        'name' => '国有房源',
+        'url' => $xinlong["headSideMenu"]["govListUrl"],
+        'show' => true,
+        'subNav' => array(
+            array(
+                'name' => '国有企业租赁房源',
+                'url' => '/pc/gov/list/tp5',
+            ),
+            array(
+                'name' => '保障房',
+                'url' => 'http://www.nnfcxx.com/baozhangfang/',
+            ),
+            array(
+                'name' => '人才公寓',
+                'url' => '/pc/gov/list/tp104',
+            ),
+            array(
+                'name' => '竞配产权房',
+                'url' => '/pc/gov/list/tp106',
+            ),
+        )
+    ),
+    array(        'name' => '市场房源',        'url' => $xinlong["headSideMenu"]["commonListUrl"],        'show' => $moduleConfig['houseInfo'],        'subNav' => array(            array(                'name' => '个人房源',                'url' => '/pc/common/list/tp3',            ),            array(                'name' => '中介房源',                'url' => '/pc/common/list/tp4',            ),            array(                'name' => '租赁企业房源',                'url' => '/pc/common/list/tp2',            ),            array(                'name' => '开发企业自持房源',                'url' => '/pc/common/list/tp6',            ),        )    ),array(        'name' => '租赁备案',        'url' => 'javascript:;',        'show' => true,        'subNav' => array(            array(                'name' => '我要核验',                'url' => '/pc/user/verification/list',            ),            array(                'name' => '我要备案',                'url' => '/pc/user/beian/list',            ),            array(                'name' => '备案查询',                'url' => '/pc/user/zuyue/list',            )        )    ),    array(        'name' => '便民服务',        'show' => true,        'url' => '/pc/user/conice',        'subNav' => array(            array(
+                'name' => '公积金查询',
+                'url' => 'http://www.nngjj.com/',
+            ),
+            array(
+                'name' => '社保查询',
+                'url' => 'http://www.nn12333.gov.cn/ecdomain/framework/nnrsw/index.jsp',
+            ),
+                        array(
+                'name' => '发票查询',
+                'url' => 'http://www.gxgs.gov.cn:9600/fpcxweb/fpcxPage.action',
+            ),
+
+            array(
+                'name' => '用电查询',
+                'url' => 'http://95598.gx.csg.cn/',
+            ),
+            array(
+                'name' => '用水查询',
+                'url' => 'https://www.gxlcwater.com/QueryForm.aspx?columnID=26',
+            ),
+            array(
+                'name' => '燃气查询',
+                'url' => 'http://www.nnzrgas.com/',
+            ),
+             array(
+                'name' => '企业/机构查询',
+                'url' => '/pc/company?page=1',
+            ),
+             array(
+                'name' => '经纪人查询',
+                'url' => '/pc/agent/list?page=1',
+            ),
+                     )
+    ),
+    array(
+        'name' => '金融政策',
+        'url' => 'javascript:;',
+        'show' => true,
+        'subNav' => array(
+            array(
+                'name' => '平安银行',
+                'url' => 'http://bank.pingan.com/',
+            ),
+            array(
+                'name' => '平安产险',
+                'url' => 'http://property.pingan.com/',
+            ),
+            array(
+                'name' => '中国农业银行',
+                'url' => 'http://www.abchina.com/cn/',
+            ),
+            array(
+                'name' => '中国工商银行',
+                'url' => 'http://www.icbc.com.cn/icbc/',
+            ),
+            array(
+                'name' => '中国建设银行',
+                'url' => 'http://www.ccb.com/gx/cn/index.html',
+            )
+        )
+    ),
+);
+?> @if(getNavCur()!='地图找房')<div class="header-wrap"><div class="header"><a class="hf-logo" href='{{$xinlong["headSideMenu"]["homeUrl"] or ""}}'><img class="logo" src='<?php echo $configure['logo']['value'] ?>'></span>{{$configure['fullName']['value'] or ''}}</a>  @if(getNavCur()!=='登录')<div class="hf-login">  @if(!$globalData['userInfo'])<span class="login-item"><em class="iconfont icon-head_login"></em><a id="topLogin" href="javascript:;">登录</a></span><a class="login-item register">注册<span class="qr-wrap clearfix"><em class="arrow"></em><img src="{{ $footerData['sQrRegister'] or ''}}"><p>扫一扫立即注册</p></span></a>  @else                     @if(getNavCur()=='用户中心')<a class="userinfo" id="J_logout">退出</a>  @else<span class="userinfo">你好，<a
+                                href='{{$xinlong["headSideMenu"]["followUrl"] or ""}}'>{{$globalData['userInfo']['accountInfo']['mobile']}}</a></span>  @endif                 @endif</div>  @endif<ul class="hf-nav" id="J_nav">  @foreach($nav as $key => $item )                 @if($item['show'])<li class="<?php echo getNavCur() == $item['name'] ? 'cur' : '' ?>"><a class="j_navA" href="{{$item['url'] or ''}}"
+                            <?php echo isset($item['target']) ? 'target="'.$item['target'].'"':'' ?>>{{$item['name']}}</a>  @if(isset($item['subNav'])&&!empty($item['subNav']))<div class="subnav"><span class="arrow"></span>  @foreach($item['subNav'] as $key =>$subItem)                                     @if($subItem['url'])<a class="border-none" target="_blank"
+                                       href="{{$subItem['url'] or ''}}">{{$subItem['name'] or ''}}</a>  @endif                                     @if(!$subItem['url'])<a class="border-none">{{$subItem['name'] or ''}}</a>  @endif                                 @endforeach</div>  @endif</li>  @endif()             @endforeach</ul></div></div> @endif<script type="text/javascript"></script><script type="text/javascript">
+    myHeader = {
+        config:<?php echo json_encode($xinlong["headSideMenu"]); ?>
+    }
+
+
+    function isObj(x) {
+        var type = typeof x;
+        return x !== null && (type === 'object' || type === 'function');
+    }
+
+    var hasOwnProperty = Object.prototype.hasOwnProperty;
+    var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+
+    function toObject(val) {
+        if (val === null || val === undefined) {
+            throw new TypeError('Cannot convert undefined or null to object');
+        }
+
+        return Object(val);
+    }
+
+    function assignKey(to, from, key) {
+        var val = from[key];
+
+        if (val === undefined || val === null) {
+            return;
+        }
+
+        if (hasOwnProperty.call(to, key)) {
+            if (to[key] === undefined || to[key] === null) {
+                throw new TypeError('Cannot convert undefined or null to object (' + key + ')');
+            }
+        }
+
+        if (!hasOwnProperty.call(to, key) || !isObj(val)) {
+            to[key] = val;
+        } else {
+            to[key] = assign(Object(to[key]), from[key]);
+        }
+    }
+
+    function assign(to, from) {
+        if (to === from) {
+            return to;
+        }
+
+        from = Object(from);
+
+        for (var key in from) {
+            if (hasOwnProperty.call(from, key)) {
+                assignKey(to, from, key);
+            }
+        }
+
+        if (Object.getOwnPropertySymbols) {
+            var symbols = Object.getOwnPropertySymbols(from);
+
+            for (var i = 0; i < symbols.length; i++) {
+                if (propIsEnumerable.call(from, symbols[i])) {
+                    assignKey(to, from, symbols[i]);
+                }
+            }
+        }
+
+        return to;
+    }
+
+    function deepAssign(target) {
+        target = toObject(target);
+
+        for (var s = 1; s < arguments.length; s++) {
+            assign(target, arguments[s]);
+        }
+
+        return target;
+    };
+
+
+</script><script>require.async('web:widget/header/header.js');</script>

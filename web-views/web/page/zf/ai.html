@@ -1,0 +1,11 @@
+@widget('web:header/header')<div id="ai-list-contain" class='house-wrapper content-wrapper'><div class="content-inner"><div class='content-header clearfix'><div class='content-header-left clearfix'><a href="">首页</a><span>&nbsp;>&nbsp;全部房源</span></div><div class='content-header-right'></div></div><div class="section-box" id="ai-modify"><div id="ai-alert-tip"><div class="ai-alert-tip-text">至少选择一个条件哦</div><div class="arrow_contain"><div class="search_arrow"></div></div></div><div id="ai-search-contain" class="section-box-content ai-search-contain"><div id="ai_rentprice_contain" class="ai-contain"><div class="ai_title">期望价格</div><div id="ai_rentprice" class="search-field"></div></div><div id="ai_layout_contain" class="ai-contain"><div class="ai_title">户型</div><div id="ai_layout" class="search-field"></div></div><div id="ai_region_contain" class="ai-contain"><div class="ai_title">区域</div><div id="ai_region" class="search-field"></div></div><div id="ai_submit" class="ai-submit-btn">保存</div></div></div><div class="section-box" id="ai-show"><div class="ai-search-contain"><div class="ai-search-title">您的租房意向</div><div id="ai-search-content"></div><div id="ai-modify-btn" class="ai-submit-btn">修改</div></div></div></div><div class='house-centent-list content-inner'><div class='house-list-header clearfix'><p class='header-left'>根据以上条件为您推荐</p><p class='header-right'></div><ul id="ai-list" class='house-list-wrapper'></ul><div id="ai-pager"></div><div class='no-result'><img src="//{{$DOMAIN_STATIC}}/govzf/web/common/no_rent_2cdd999.png"><div>没有找到符合条件的房源，试试<a href="javascript:" id="modify-again">修改意向</a></div></div></div></div><script>
+  var searchConfig = {
+    api: "{{$searchApiUrl or ''}}"
+  };
+  var listConfig = {
+    loadImg: "//{{$DOMAIN_STATIC}}/govzf/web/common/default/loading/img_loading_256_192_70413a9.png"
+  };
+  var intelligenceFilter = <?php echo json_encode($intelligenceFilter); ?>;
+  var aiUrl = "/pc/api/list";
+  require.async('web:static/zf/ai/ai.js')
+</script> @widget('web:footer/footer')

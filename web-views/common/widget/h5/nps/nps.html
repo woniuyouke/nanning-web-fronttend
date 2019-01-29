@@ -1,0 +1,5 @@
+<div id="J_npsDialog"></div><input id="J_npsUrl" type="hidden" value="{{ $globalData['aUrl']['npsUrl'] }}" /><input id="J_basedomain" type="hidden" value="{{ $pub['baseDomain'] }}" /><script type="text/html" id="J_npsTpl">
+    <h3 class="nps-tit"><%=data.title%></h3>
+    <p class="nps-txt"><%=data.message%></p>
+    <button id="J_npsBtn" class="nps-btn"><%=data.button_title%></button>
+</script><script>require.async('common:widget/h5/nps/nps.js');</script>

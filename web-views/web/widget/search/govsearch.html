@@ -1,0 +1,130 @@
+<?php $filterData = empty($data['filterData']) ? array() : $data['filterData'] ?><div class='content-search-inner' id='J_search_inner'><div class='search-list'><ul class='clearfix'><li class='search-every-title'><strong>地区：</strong></li><li class="{{empty($isMetro) ? 'current-region' : '' }} region" data-search='/list'>按区域<b class='region-arrow'></b></li></ul><div class='region-position{{empty($isMetro) ? '' : '-metro' }}'>
+	         @if(empty($isMetro))
+		     	<ul class='region-parent clearfix'>
+		     	 	@foreach(@$filterData['regions']['list'] as $key => $item)
+		     		 	@if(@$item['id'] == @$data['params']['regionId'])
+		     			<li data-search="{{@$filterData['regions']['alias']}}{{@$item['id']}}" class='current-selected'>{{@$item['name']}}</li>
+		     		 	@else 
+		     			<li data-search="{{@$filterData['regions']['alias']}}{{@$item['id']}}">{{@$item['name']}}</li>
+		     		 	@endif
+		     	 	@endforeach
+		     	</ul>
+		     	<!-- params 分隔block成数组 -->
+		     	<?php
+		     		if(empty(@$data['params']['blockId'])) {
+		     			$blockId = array();
+		     		}else {
+		     			$blockId = explode(",", @$data['params']['blockId']);
+		     		}
+		     	?>
+
+		      	@foreach(@$filterData['regions']['list'] as $key => $item)
+		     	<?php $item['child']['list'] = [] ?>      <!--    乐山项目没有板块，板块信息强行置空   -->
+		      	@if(@$item['id'] == @$data['params']['regionId'] && !empty(@$item['child']['list']))
+		     	<ul class='region-children clearfix'>
+		     	 	@foreach(@$item['child']['list'] as $key => $blockItem)
+		     		 	@if(in_array($blockItem['id'], $blockId) || @$data['params']['blockId'] == $blockItem['id'])
+		     			 	@if(empty($blockItem['id']))
+		     				<li href='javascript:;' data-search="{{@$item['child']['alias']}}{{@$blockItem['id']}}" class='checkout-box current-selected selected'>{{@$blockItem['name']}}</li>
+		     			 	@else
+		     				<li href='javascript:;' data-search="{{@$item['child']['alias']}}{{@$blockItem['id']}}" class='checkout-box current-selected icon iconfont icon-checkbox_square_sele selected'>{{@$blockItem['name']}}</li>
+		     			 	@endif
+		     		 	@else 
+		     			 	@if(empty($blockItem['id']))
+		     				<li href='javascript:;' data-search="{{@$item['child']['alias']}}{{@$blockItem['id']}}" class='checkout-box'>{{@$blockItem['name']}}</li>
+		     			 	@else
+		     				<li href='javascript:;' data-search="{{@$item['child']['alias']}}{{@$blockItem['id']}}" class='checkout-box icon iconfont icon-checkbox_square_unse'>{{@$blockItem['name']}}</li>
+		     			 	@endif
+		     		 	@endif
+		     	 	@endforeach
+		     	</ul>
+		      	@endif
+		      	@endforeach
+		     @else
+		    	<ul class='region-parent clearfix'>
+		     	 	@foreach(@$filterData['subway']['list'] as $key => $item)
+		     		 	@if(@$item['id'] == @$data['params']['line'])
+		     			<li data-search="{{@$filterData['subway']['alias']}}{{@$item['id']}}" class='current-selected'>{{@$item['name']}}</li>
+		     		 	@else 
+		     			<li data-search="{{@$filterData['subway']['alias']}}{{@$item['id']}}">{{@$item['name']}}</li>
+		     		 	@endif
+		     	 	@endforeach
+		     	</ul>
+		     	<!-- params 分隔station成数组 -->
+		     	<?php
+		     		if(empty(@$data['params']['station'])) {
+		     			$station = array();
+		     		}else {
+		     			$station = explode(",", $data['params']['station']);
+		     		}
+		     	?>
+		      	@foreach(@$filterData['subway']['list'] as $key => $item)
+		      	@if(@$item['id'] == @$data['params']['line'] && !empty(@$item['child']['list']))
+			     	<ul class='region-children clearfix'>
+			     	 	@foreach(@$item['child']['list'] as $key => $blockItem)
+			     		 	@if(in_array(@$blockItem['id'], $station) || @$blockItem['id'] == @$data['params']['station'])
+			     			 	@if(empty($blockItem['id']))
+			     				<li href='javascript:;' data-search="{{@$item['child']['alias']}}{{@$blockItem['id']}}" class='checkout-box current-selected selected'>{{@$blockItem['name']}}</li>
+			     			 	@else 
+			     				<li href='javascript:;' data-search="{{@$item['child']['alias']}}{{@$blockItem['id']}}" class='checkout-box current-selected icon iconfont icon-checkbox_square_sele selected'>{{@$blockItem['name']}}</li>
+			     			 	@endif
+			     		 	@else 
+			     			 	@if(empty($blockItem['id']))
+			     				<li href='javascript:;' data-search="{{@$item['child']['alias']}}{{@$blockItem['id']}}" class='checkout-box'>{{@$blockItem['name']}}</li>
+			     			 	@else
+			     				<li href='javascript:;' data-search="{{@$item['child']['alias']}}{{@$blockItem['id']}}" class='checkout-box icon iconfont iconfont icon-checkbox_square_unse'>{{@$blockItem['name']}}</li>
+			     			 	@endif
+			     		 	@endif
+			     	 	@endforeach
+			     	</ul>
+		      	@endif
+		      	@endforeach
+		     @endif
+		   
+     	</div>
+     	<!-- 类型 -->
+     	<ul class='clearfix'>
+     		<li class='search-every-title'><strong>{{@$filterData['publicType']['name']}}：</strong></li>
+     	 	@foreach(@$filterData['publicType']['list'] as $key => $item)
+     		 	@if(@$key == @$data['params']['publicType'])
+     			<li data-search="{{@$filterData['publicType']['alias']}}{{@$key}}" class='current-selected'>{{@$item}}</li>
+     		 	@else 
+     			<li data-search="{{@$filterData['publicType']['alias']}}{{@$key}}">{{@$item}}</li>
+     		 	@endif
+     	 	@endforeach
+     	</ul>
+     	<!-- 状态 -->
+     	<ul class='clearfix'>
+     		<li class='search-every-title'><strong>{{@$filterData['applicationStatus']['name']}}：</strong></li>
+     	 	@foreach(@$filterData['applicationStatus']['list'] as $key => $item)
+     		 	@if(@$key == @$data['params']['applicationStatus'])
+     			<li data-search="{{@$filterData['applicationStatus']['alias']}}{{@$key}}" class='current-selected'>{{@$item}}</li>
+     		 	@else 
+     			<li data-search="{{@$filterData['applicationStatus']['alias']}}{{@$key}}">{{@$item}}</li>
+     		 	@endif
+     	 	@endforeach
+     	</ul>
+     	<?php 
+     		$showSeo = false;
+     		foreach(@$seoTag as $key => $item) {
+     			if(!empty($item)) {
+     				$showSeo = true;
+     			}
+     		}
+     	?>
+      	@if(!empty($showSeo))
+     	<p class='selected-condition clearfix'>
+     		<strong class='selected-condition-title'>已选条件</strong>
+     	 	@foreach(@$seoTag as $key => $item)
+     		 	@if(!empty($item))
+     			<span class='every-selected-condition' data-search='{{@$key}}'>{{@$item}}</span>
+     		 	@endif
+     	 	@endforeach
+     		<span class='all-delete-condition icon iconfont icon-nav_detele'>全部清空</span>
+     	</p>
+      	@endif
+	</div>
+</div>
+<script type="text/javascript">
+    require.async('web:widget/search/conditionsearch.js');
+</script>

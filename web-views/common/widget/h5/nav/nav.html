@@ -1,0 +1,15 @@
+<?php
+$moduleConfig = $_SERVER['F_GlobalData']['moduleConfig'];
+$configure = $_SERVER['F_GlobalData']['configure'];
+
+?><header class="h5_header <?php echo !empty($index) ? 'bord_white' : ''; ?> fix-header"><a href="javascript:;" class="sidemenu_box" id='navBtn'><span class="iconfont icon-home_menu"></span><span class="iconfont icon-circle J_red_circle"></span></a><p class="title-index"><a href='{{$xinlong["headSideMenu"]["mobileHomeUrl"] or ""}}'><img class="logo" src="<?php echo $configure['logo']['value'] ?>">首页</a></p></header><div class="h5_header_back"></div><nav id="sidemenu"
+     class="sidemenu"
+><a href="javascript:;" class="close_sidemenu"><span class="iconfont icon-close_ic"></span></a><ul><li class="navlink0"><a href='{{$xinlong["headSideMenu"]["mobileHomeUrl"] or ""}}'><span class="item">首页</span></a></li>  @if(false && $moduleConfig['publicRental'])  @endif<li class="navlink1"><a href='{{$xinlong["headSideMenu"]["govListUrl"] or ""}}'><span class="item">国有房源</span></a></li>  @if($moduleConfig['houseInfo'])<li class="navlink2"><a href='{{$xinlong["headSideMenu"]["houseListUrl"] or ""}}'><span class="item">市场房源</span></a></li>  @endif<li class="navlink3"><a href="/h5/user/index"><span class="item">个人中心<span class="iconfont icon-circle J_red_circle"></span></span></a></li>  @if($moduleConfig['marketNews'])<li class="navlink3"><a href="/h5/moreNews/1"><span class="item">租房动态</span></a></li>  @endif</ul></nav><div class="mask" id="navMask"></div><script>
+    if (typeof navConfig == 'undefined') {
+        var navConfig = {
+            sBaseInfoUrl: "/web/account/C/baseinfoC",//用户信息
+        }
+    }
+    navConfig.index = {{ (isset($index) && $index == true)? 1 : 0 }};
+    navConfig.isLogin = "/v3/api/home/isLogin";
+</script><script>require.async('common:widget/h5/nav/nav.js');</script>

@@ -1,0 +1,1941 @@
+{
+    "web:components/bootstrap-datetimepicker/bootstrap-datetimepicker.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/c_/bootstrap-datetimepicker/bootstrap-datetimepicker_ea1ca62.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "web:components/bootstrap-datetimepicker/bootstrap-datetimepicker.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/c_/bootstrap-datetimepicker/bootstrap-datetimepicker_5c08e81.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "web:components/bootstrap-datetimepicker/bootstrap-datetimepicker.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "web:components/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/c_/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN_d8f34db.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "web:components/bootstrap-datetimepicker/bootstrap.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/c_/bootstrap-datetimepicker/bootstrap_05a50df.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "web:components/bootstrap-datetimepicker/bootstrap.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/c_/bootstrap-datetimepicker/bootstrap_3ac9875.js",
+        "deps": [
+            "web:components/bootstrap-datetimepicker/bootstrap.css"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "web:components/dropSelect/dropSelect.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/c_/dropSelect/dropSelect_c61be0c.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "web:components/dropSelect/dropSelect.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/c_/dropSelect/dropSelect_50b36c9.js",
+        "deps": [
+            "web:components/dropSelect/dropSelect.css"
+        ],
+        "asyncs": [
+            "common:components/jquery/jquery.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "web:components/dropSelect/dropSelect.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/c_/dropSelect/dropSelect_5ace2c7.css",
+        "isComponent": true,
+        "type": "css"
+    },
+    "web:components/lazyload/lazyload.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/c_/lazyload/lazyload_ed47bf1.js",
+        "deps": [
+            "common:components/jquery/jquery.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "web:components/qrcode/qrcode.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/c_/qrcode/qrcode_f3aa6fe.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "web:components/search/jq_dropbox.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/c_/search/jq_dropbox_33c5d69.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "web:components/select/dropPanel.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/c_/select/dropPanel_c5ac59c.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js"
+        ],
+        "isComponent": true,
+        "type": "js"
+    },
+    "web:components/test/index.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/c_/test/index_c800638.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "web:components/utils/store.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/c_/utils/store_a143def.js",
+        "isComponent": true,
+        "type": "js"
+    },
+    "web:index.html": {
+        "css": [
+            "/static/index.css"
+        ],
+        "asyncs": [
+            "static/pagelet.js"
+        ],
+        "refs": [
+            "web:pagelet/bigrender/bigrender.html",
+            "web:layout.html"
+        ]
+    },
+    "web:layout.html": {
+        "refs": [
+            "web:widget/vfooter/vfooter.html"
+        ]
+    },
+    "web:notdeal/es5-sham.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/s_/notdeal/es5-sham_c9d3839.js",
+        "type": "js"
+    },
+    "web:notdeal/es5-shim.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/s_/notdeal/es5-shim_dfe9e56.js",
+        "type": "js"
+    },
+    "web:page/index.html": {
+        "headJs": [
+            "//api.map.baidu.com/api?v=15&ak=dCfxVQH8PlNRzQgP51QLOxCbgyNUbXVz"
+        ],
+        "css": [
+            "common:components/third-party/swiper/swiper.css",
+            "web:static/index/index.less",
+            "web:static/index/card.less",
+            "web:static/index/selectedCard.less",
+            "web:static/zf/mapSearch/commute-form.less"
+        ],
+        "asyncs": [
+            "web:static/index/index.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/search/search.html",
+            "web:widget/index/tools/tools.html",
+            "web:widget/index/ai/ai.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/index/index.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/index/index_27147c0.css",
+        "type": "css"
+    },
+    "web:static/index/card.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/index/card_a3a2914.css",
+        "type": "css"
+    },
+    "web:static/index/selectedCard.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/index/selectedCard_5c86d55.css",
+        "type": "css"
+    },
+    "web:static/zf/mapSearch/commute-form.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/zf/mapSearch/commute-form_73913b0.css",
+        "type": "css"
+    },
+    "web:page/member/account/accountAppeal.html": {
+        "css": [
+            "web:static/member/account/accountAppeal/accountAppeal.less"
+        ],
+        "asyncs": [
+            "web:static/member/account/accountAppeal/accountAppeal.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/account/accountAppeal/accountAppeal.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/account/accountAppeal/accountAppeal_ad3cf7b.css",
+        "type": "css"
+    },
+    "web:page/member/account/address.html": {
+        "css": [
+            "web:static/member/account/address/address.less"
+        ],
+        "asyncs": [
+            "web:static/member/account/address/address.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/account/address/address.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/account/address/address_fa38623.css",
+        "type": "css"
+    },
+    "web:page/member/account/authDetail.html": {
+        "css": [
+            "web:static/member/account/index/index.less"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/account/index/index.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/account/index/index_33fccc8.css",
+        "type": "css"
+    },
+    "web:page/member/account/changeMobile.html": {
+        "css": [
+            "web:static/member/account/changeMobile/index.less"
+        ],
+        "asyncs": [
+            "web:static/member/account/changeMobile/index.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/account/changeMobile/index.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/account/changeMobile/index_c3b50c1.css",
+        "type": "css"
+    },
+    "web:page/member/account/idcardUpload.html": {
+        "css": [
+            "web:static/member/account/idcardUpload/idcardUpload.less"
+        ],
+        "asyncs": [
+            "web:static/member/account/idcardUpload/idcardUpload.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/account/idcardUpload/idcardUpload.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/account/idcardUpload/idcardUpload_a5c7c9e.css",
+        "type": "css"
+    },
+    "web:page/member/account/index.html": {
+        "css": [
+            "web:static/member/account/index/index.less"
+        ],
+        "asyncs": [
+            "web:static/member/account/index/index.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:page/member/account/realAuth.html": {
+        "css": [
+            "web:static/member/account/realAuth/realAuth.less"
+        ],
+        "asyncs": [
+            "web:static/member/account/realAuth/realAuth.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/account/realAuth/realAuth.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/account/realAuth/realAuth_0ce0e69.css",
+        "type": "css"
+    },
+    "web:page/member/account/resetPwd.html": {
+        "css": [
+            "web:static/member/account/resetPwd/index.less"
+        ],
+        "asyncs": [
+            "web:static/member/account/resetPwd/index.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/account/resetPwd/index.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/account/resetPwd/index_eeedd0b.css",
+        "type": "css"
+    },
+    "web:page/member/account/setPayPwd.html": {
+        "css": [
+            "web:static/member/account/setPayPwd/index.less"
+        ],
+        "asyncs": [
+            "web:static/member/account/setPayPwd/index.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/account/setPayPwd/index.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/account/setPayPwd/index_c3b50c1.css",
+        "type": "css"
+    },
+    "web:page/member/account/upload.html": {
+        "bottomJs": [
+            "https://api.map.baidu.com/api?v=2.0&ak=dCfxVQH8PlNRzQgP51QLOxCbgyNUbXVz"
+        ],
+        "css": [
+            "web:static/member/user/sendRoom/sendRoom.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/upload/upload.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/sendRoom/sendRoom.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/sendRoom/sendRoom_2d0a5e5.css",
+        "type": "css"
+    },
+    "web:page/member/agreement.html": {
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:page/member/findPwd.html": {
+        "css": [
+            "web:static/member/findPwd/index.less"
+        ],
+        "asyncs": [
+            "web:static/member/findPwd/index.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/findPwd/index.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/findPwd/index_5ce1590.css",
+        "type": "css"
+    },
+    "web:page/member/form.html": {
+        "css": [
+            "web:static/member/form/form.less"
+        ],
+        "asyncs": [
+            "web:static/member/form/form.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/form/form.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/form/form_dbce213.css",
+        "type": "css"
+    },
+    "web:page/member/help.html": {
+        "css": [
+            "web:static/member/help/help.less"
+        ],
+        "asyncs": [
+            "web:static/member/help/help.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/help/help.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/help/help_800ad75.css",
+        "type": "css"
+    },
+    "web:page/member/login.html": {
+        "css": [
+            "web:static/member/login/index.less"
+        ],
+        "asyncs": [
+            "web:static/member/login/index.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/login/index.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/login/index_3e04ad3.css",
+        "type": "css"
+    },
+    "web:page/member/user/business/bankCard.html": {
+        "css": [
+            "web:static/member/account/resetPwd/index.less",
+            "web:static/member/user/bisiness/bankCard.less"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/bisiness/bankCard.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/bisiness/bankCard_26170ea.css",
+        "type": "css"
+    },
+    "web:page/member/user/business/bindCard.html": {
+        "css": [
+            "web:static/member/account/resetPwd/index.less",
+            "web:static/member/user/bisiness/addCard.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/bisiness/bindCard.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/bisiness/addCard.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/bisiness/addCard_d4dfcdf.css",
+        "type": "css"
+    },
+    "web:page/member/user/business/cardList.html": {
+        "css": [
+            "web:static/member/user/bisiness/bankList.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/bisiness/bankList.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/bisiness/bankList.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/bisiness/bankList_5ec2e59.css",
+        "type": "css"
+    },
+    "web:page/member/user/business/listOfBills.html": {
+        "css": [
+            "web:static/member/user/bisiness/billList.less",
+            "web:static/common/pager.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/bisiness/billList.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/bisiness/billList.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/bisiness/billList_551cb15.css",
+        "type": "css"
+    },
+    "web:static/common/pager.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/common/pager_bf1c1d9.css",
+        "type": "css"
+    },
+    "web:page/member/user/convenienceService.html": {
+        "css": [
+            "web:static/member/user/convenienceService/index.less"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/convenienceService/index.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/convenienceService/index_4af0869.css",
+        "type": "css"
+    },
+    "web:page/member/user/myfocus.html": {
+        "css": [
+            "web:static/member/user/myfocus.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/myfocus.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/myfocus.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/myfocus_2f295cf.css",
+        "type": "css"
+    },
+    "web:page/member/user/mySendRoom.html": {
+        "css": [
+            "web:static/member/user/mySendRoom/mySendRoom.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/mySendRoom/mySendRoom.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/mySendRoom/mySendRoom.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/mySendRoom/mySendRoom_202b339.css",
+        "type": "css"
+    },
+    "web:page/member/user/process.html": {
+        "css": [
+            "web:static/member/user/process/process.less"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/process/process.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/process/process_53d65be.css",
+        "type": "css"
+    },
+    "web:page/member/user/schedule.html": {
+        "css": [
+            "web:static/member/user/schedule/index.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/schedule/index.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/house_owner/house_owner.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/schedule/index.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/schedule/index_800d0fc.css",
+        "type": "css"
+    },
+    "web:page/member/user/sendRoom.html": {
+        "bottomJs": [
+            "https://api.map.baidu.com/api?v=2.0&ak=dCfxVQH8PlNRzQgP51QLOxCbgyNUbXVz"
+        ],
+        "css": [
+            "web:static/member/user/sendRoom/sendRoom.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/sendRoom/sendRoom.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/tip/tip.html",
+            "web:widget/check_modal/check_modal.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:page/member/user/server/agent_detail.html": {
+        "css": [
+            "web:static/member/user/server/agent/agentDetail.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/server/agent/agentDetail.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/server/agent/agentDetail.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/server/agent/agentDetail_fc9b3e2.css",
+        "type": "css"
+    },
+    "web:page/member/user/server/agent.html": {
+        "css": [
+            "web:static/member/user/server/agent/agent.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/server/agent/agent.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/server/agent/agent.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/server/agent/agent_b0f9e84.css",
+        "type": "css"
+    },
+    "web:page/member/user/server/agreement/agreementDetail.html": {
+        "css": [
+            "web:static/member/user/server/agreement/agreementDetail.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/server/agreement/agreementDetail.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/loading/loading.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/server/agreement/agreementDetail.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/server/agreement/agreementDetail_89d6efa.css",
+        "type": "css"
+    },
+    "web:page/member/user/server/agreement/agreementList.html": {
+        "css": [
+            "web:static/member/user/server/agreement/agreementList.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/server/agreement/agreementList.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/server/agreement/agreementList.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/server/agreement/agreementList_a599a7b.css",
+        "type": "css"
+    },
+    "web:page/member/user/server/agreement/agreementStatus.html": {
+        "css": [
+            "web:static/member/user/server/agreement/agreementStatus.less",
+            "web:static/common/previewImg.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/server/agreement/agreementStatus.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/server/agreement/agreementStatus.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/server/agreement/agreementStatus_d1710b9.css",
+        "type": "css"
+    },
+    "web:static/common/previewImg.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/common/previewImg_1c9aea7.css",
+        "type": "css"
+    },
+    "web:page/member/user/server/company_detail.html": {
+        "css": [
+            "web:static/member/user/server/company/companyDetail.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/server/company/companyDetail.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/server/company/companyDetail.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/server/company/companyDetail_d49c997.css",
+        "type": "css"
+    },
+    "web:page/member/user/server/company.html": {
+        "css": [
+            "web:static/member/user/server/company/company.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/server/company/company.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/server/company/company.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/server/company/company_a0c4971.css",
+        "type": "css"
+    },
+    "web:page/member/user/verification/detail.html": {
+        "css": [
+            "web:static/member/user/verification/list.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/verification/detail.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/verification/list.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/verification/list_fb67d86.css",
+        "type": "css"
+    },
+    "web:page/member/user/verification/list.html": {
+        "css": [
+            "web:static/member/user/verification/list.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/verification/list.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:page/member/user/verify/verify.html": {
+        "bottomJs": [
+            "https://api.map.baidu.com/api?v=2.0&ak=dCfxVQH8PlNRzQgP51QLOxCbgyNUbXVz"
+        ],
+        "css": [
+            "web:static/member/user/verify/verify.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/verify/verify.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/verify_header/verify_header.html",
+            "web:widget/tip/tip.html",
+            "web:widget/check_modal/check_modal.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/verify/verify.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/verify/verify_2fe7252.css",
+        "type": "css"
+    },
+    "web:page/member/user/zuyue/addContract.html": {
+        "css": [
+            "web:static/member/user/zuyue/addContract.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/zuyue/addContract.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/loading/loading.html",
+            "web:widget/crumbs/crumbs.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/zuyue/addContract.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/zuyue/addContract_71fd933.css",
+        "type": "css"
+    },
+    "web:page/member/user/zuyue/detail.html": {
+        "css": [
+            "web:static/member/user/zuyue/detail.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/zuyue/detail.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/zuyue/detail.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/zuyue/detail_40e593d.css",
+        "type": "css"
+    },
+    "web:page/member/user/zuyue/list.html": {
+        "css": [
+            "web:static/member/user/zuyue/list.less"
+        ],
+        "asyncs": [
+            "web:static/member/user/zuyue/list.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/usersider/index.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/member/user/zuyue/list.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/zuyue/list_f8c1725.css",
+        "type": "css"
+    },
+    "web:page/news/detail.html": {
+        "css": [
+            "web:static/news/detail.less",
+            "web:static/news/simditor.css"
+        ],
+        "asyncs": [
+            "web:static/news/detail.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/news/detail.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/news/detail_17c6b5f.css",
+        "type": "css"
+    },
+    "web:static/news/simditor.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/news/simditor_1a524c4.css",
+        "type": "css"
+    },
+    "web:page/news/list.html": {
+        "css": [
+            "web:static/news/list.less",
+            "web:static/common/pager.less"
+        ],
+        "asyncs": [
+            "web:static/news/list.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/news/list.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/news/list_b9109d4.css",
+        "type": "css"
+    },
+    "web:page/zf/ai.html": {
+        "css": [
+            "web:static/common/pager.less",
+            "web:static/zf/markeylist/markeylist.css",
+            "web:static/index/ai.less"
+        ],
+        "asyncs": [
+            "web:static/zf/ai/ai.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/zf/markeylist/markeylist.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/zf/markeylist/markeylist_5dac839.css",
+        "type": "css"
+    },
+    "web:static/index/ai.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/index/ai_8ef145f.css",
+        "type": "css"
+    },
+    "web:page/zf/detail/marketDetail.html": {
+        "headJs": [
+            "//api.map.baidu.com/api?v=15&ak=dCfxVQH8PlNRzQgP51QLOxCbgyNUbXVz"
+        ],
+        "css": [
+            "web:static/zf/detail/detail.less",
+            "web:static/common/previewImg.less"
+        ],
+        "asyncs": [
+            "web:static/zf/detail/detail.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/crumbs/crumbs.html",
+            "web:widget/login/login.html",
+            "web:widget/yue_look/yue_look.html",
+            "web:widget/online_sign/online_sign.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/zf/detail/detail.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/zf/detail/detail_73af40d.css",
+        "type": "css"
+    },
+    "web:page/zf/detail/publiDetail.html": {
+        "headJs": [
+            "//api.map.baidu.com/api?v=15&ak=dCfxVQH8PlNRzQgP51QLOxCbgyNUbXVz"
+        ],
+        "css": [
+            "web:static/zf/detail/detail.less"
+        ],
+        "asyncs": [
+            "web:static/zf/detail/detail.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/crumbs/crumbs.html",
+            "web:widget/login/login.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:page/zf/govlist.html": {
+        "css": [
+            "web:static/zf/markeylist/markeylist.css"
+        ],
+        "asyncs": [
+            "web:static/zf/markeylist/markeylist.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/search/fuzzysearch.html",
+            "web:widget/search/conditionsearch.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:page/zf/mapSearch/commute-form.html": {
+        "headJs": [
+            "//api.map.baidu.com/api?v=15&ak=dCfxVQH8PlNRzQgP51QLOxCbgyNUbXVz"
+        ],
+        "css": [
+            "web:static/zf/mapSearch/commute-form.less"
+        ],
+        "asyncs": [
+            "web:static/zf/mapSearch/commute-form.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html"
+        ]
+    },
+    "web:page/zf/mapSearch/index.html": {
+        "headJs": [
+            "//api.map.baidu.com/api?v=15&ak=dCfxVQH8PlNRzQgP51QLOxCbgyNUbXVz"
+        ],
+        "css": [
+            "web:static/zf/mapSearch/index.less",
+            "web:static/zf/mapSearch/header.less",
+            "web:static/zf/mapSearch/tileSelect.less"
+        ],
+        "asyncs": [
+            "web:static/zf/mapSearch/index.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/zf/mapSearch/index.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/zf/mapSearch/index_bf27f8d.css",
+        "type": "css"
+    },
+    "web:static/zf/mapSearch/header.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/zf/mapSearch/header_799f79f.css",
+        "type": "css"
+    },
+    "web:static/zf/mapSearch/tileSelect.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/zf/mapSearch/tileSelect_994c916.css",
+        "type": "css"
+    },
+    "web:page/zf/mapSearch/publicRental_index.html": {
+        "headJs": [
+            "//api.map.baidu.com/api?v=15&ak=dCfxVQH8PlNRzQgP51QLOxCbgyNUbXVz"
+        ],
+        "css": [
+            "web:static/zf/mapSearch/index.less",
+            "web:static/zf/mapSearch/header.less",
+            "web:static/zf/mapSearch/tileSelect.less"
+        ],
+        "asyncs": [
+            "web:static/zf/mapSearch/index.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:page/zf/markeylist.html": {
+        "css": [
+            "web:static/zf/markeylist/markeylist.css"
+        ],
+        "asyncs": [
+            "web:static/zf/markeylist/markeylist.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/search/fuzzysearch.html",
+            "web:widget/search/conditionsearch.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:page/zf/rank.html": {
+        "css": [
+            "web:static/news/rank.less"
+        ],
+        "asyncs": [
+            "web:static/news/rank.js"
+        ],
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:static/news/rank.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/news/rank_8c09d59.css",
+        "type": "css"
+    },
+    "web:page/zf/test.html": {
+        "refs": [
+            "web:widget/header/header.html",
+            "web:widget/footer/footer.html"
+        ]
+    },
+    "web:pagelet/ajax/ajax.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/pl_/ajax/ajax_dfd4503.css",
+        "isPagelet": true,
+        "type": "css"
+    },
+    "web:pagelet/ajax/ajax.html": {
+        "css": [
+            "web:pagelet/ajax/ajax.css"
+        ],
+        "asyncs": [
+            "static/pagelet.js"
+        ],
+        "isPagelet": true
+    },
+    "web:pagelet/bigrender/bigrender.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/pl_/bigrender/bigrender_1e333e6.css",
+        "isPagelet": true,
+        "type": "css"
+    },
+    "web:pagelet/bigrender/bigrender.html": {
+        "css": [
+            "web:pagelet/bigrender/bigrender.css"
+        ],
+        "asyncs": [
+            "web:pagelet/bigrender/bigrender.js",
+            "static/pagelet.js"
+        ],
+        "isPagelet": true
+    },
+    "web:pagelet/bigrender/bigrender.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/pl_/bigrender/bigrender_cb9ca00.js",
+        "isPagelet": true,
+        "type": "js"
+    },
+    "web:static/_variables.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/_variables_fe673ec.css",
+        "type": "css"
+    },
+    "web:static/common/base.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/common/base_af0d625.css",
+        "type": "css"
+    },
+    "web:static/common/fix.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/common/fix_a15a861.css",
+        "type": "css"
+    },
+    "web:static/common/layout.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/common/layout_00691a9.css",
+        "type": "css"
+    },
+    "web:static/common/ui.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/common/ui_757b79f.css",
+        "type": "css"
+    },
+    "web:static/index/index.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/index/index_721cd92.js",
+        "asyncs": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/jquery/jquery.js",
+            "common:components/third-party/swiper/swiper.js",
+            "common:components/third-party/lazyload/lazyload.js",
+            "common:components/third-party/moment/moment.js",
+            "common:components/pcUI/template/template.js",
+            "common:components/pcUI/dialog/dialog.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/_common.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/_common_ffc92f6.css",
+        "type": "css"
+    },
+    "web:static/member/account/accountAppeal/accountAppeal.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/account/accountAppeal/accountAppeal_6048a26.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/uploader/uploader.js",
+            "common:components/pcUI/tips/tips.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/account/address/address.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/account/address/address_4bebfb3.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/tips/tips.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/account/authDetail/index.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/account/authDetail/index_eeedd0b.css",
+        "type": "css"
+    },
+    "web:static/member/account/changeMobile/index.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/account/changeMobile/index_170a328.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/tips/tips.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/account/idcardUpload/idcardUpload.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/account/idcardUpload/idcardUpload_6a601ea.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/cuteTips/cuteTips.js",
+            "common:components/ui/loading/loading.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/account/index/index.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/account/index/index_d04fed8.js",
+        "asyncs": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/ui/dialog/dialog.js",
+            "common:components/ui/mask/mask.js",
+            "common:components/ui/tips/tips.js",
+            "common:components/ui/authAjax/authAjax.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/account/realAuth/realAuth.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/account/realAuth/realAuth_4b644a6.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/tips/tips.js",
+            "common:components/pcUI/dialog/dialog.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/account/resetPwd/index.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/account/resetPwd/index_8c91e61.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/tips/tips.js",
+            "common:components/ui/getQueryString/getQueryString.js",
+            "common:components/jsencrypt/jsencrypt.js",
+            "common:components/publickey/publickey.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/account/setPayPwd/index.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/account/setPayPwd/index_71398bc.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/tips/tips.js",
+            "common:components/ui/getQueryString/getQueryString.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/agreement/agreement.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/agreement/agreement_0849167.css",
+        "type": "css"
+    },
+    "web:static/member/findPwd/index.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/findPwd/index_dadb984.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/tips/tips.js",
+            "common:components/jsencrypt/jsencrypt.js",
+            "common:components/publickey/publickey.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/form/form.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/form/form_51517f8.js",
+        "deps": [
+            "common:components/jquery/jquery.js",
+            "web:components/bootstrap-datetimepicker/bootstrap-datetimepicker.js",
+            "common:components/pcUI/template/template.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/ui/getQueryString/getQueryString.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/form/verify.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/form/verify_e323d6d.js",
+        "type": "js"
+    },
+    "web:static/member/help/help.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/help/help_5be38fb.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/index/index.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/index/index_ffc92f6.css",
+        "type": "css"
+    },
+    "web:static/member/login/index.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/login/index_0ab69dd.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/ui/getQueryString/getQueryString.js",
+            "common:components/ui/jumpUrlWithReturn/jumpUrlWithReturn.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/jsencrypt/jsencrypt.js",
+            "common:components/publickey/publickey.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/bisiness/bankList.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/bisiness/bankList_03353c8.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/tips/tips.js",
+            "common:components/ui/authAjax/authAjax.js",
+            "common:components/ui/template/template.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/bisiness/billList.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/bisiness/billList_8de56e9.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/tips/tips.js",
+            "common:components/ui/authAjax/authAjax.js",
+            "common:components/ui/template/template.js",
+            "common:components/pcUI/util/number.js",
+            "common:components/third-party/jquery-qrcode/jquery.qrcode.min.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/bisiness/bindCard.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/bisiness/bindCard_f962e36.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/tips/tips.js",
+            "common:components/ui/authAjax/authAjax.js",
+            "common:components/ui/template/template.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/index.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/index_887ff05.css",
+        "type": "css"
+    },
+    "web:static/member/user/myfocus.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/myfocus_7cecaf2.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/template/template.js",
+            "common:components/pcUI/pager/pager.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/mySendRoom/mySendRoom.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/mySendRoom/mySendRoom_22126c8.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/template/template.js",
+            "common:components/pcUI/pager/pager.js",
+            "common:components/pcUI/tips/tips.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/schedule/index.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/schedule/index_dfec2c6.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/ui/zepto/zepto.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/template/template.js",
+            "common:components/third-party/lazyload/lazyload.js",
+            "common:components/pcUI/tips/tips.js",
+            "common:components/ui/getQueryString/getQueryString.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/sendRoom/sendRoom.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/sendRoom/sendRoom_b340a04.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/uploader/uploader.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/suggestion/suggestion.js",
+            "common:components/pcUI/cuteTips/cuteTips.js",
+            "common:components/ui/loading/loading.js",
+            "common:components/pcUI/tooltip/tooltip.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/server/agent/agent.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/server/agent/agent_0d5c497.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/pager/pager.js",
+            "common:components/ui/template/template.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/server/agent/agentDetail.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/server/agent/agentDetail_123bdf1.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/pager/pager.js",
+            "common:components/ui/template/template.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/server/agreement/agreementDetail.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/server/agreement/agreementDetail_f37018b.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/uploader/uploader.js",
+            "common:components/pcUI/calendar/calendar.js",
+            "common:components/pcUI/tips/tips.js",
+            "common:components/pcUI/formValid/formValid.js",
+            "common:components/ui/loading/loading.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/server/agreement/agreementList.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/server/agreement/agreementList_362434a.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/pager/pager.js",
+            "common:components/pcUI/tips/tips.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/server/agreement/agreementStatus.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/server/agreement/agreementStatus_04e5167.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/ui/template/template.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/tips/tips.js",
+            "common:components/previewImg/previewImg.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/server/company/company.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/server/company/company_46b0d62.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/pager/pager.js",
+            "common:components/ui/template/template.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/server/company/companyDetail.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/server/company/companyDetail_b7468cb.js",
+        "asyncs": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/jquery/jquery.js",
+            "common:components/ui/template/template.js",
+            "common:components/third-party/lazyload/lazyload.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/upload/upload.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/upload/upload_51c6713.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/uploader/uploader.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/suggestion/suggestion.js",
+            "common:components/pcUI/tips/tips.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/verification/detail.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/verification/detail_6f36cd6.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/template/template.js",
+            "common:components/ui/getQueryString/getQueryString.js",
+            "common:components/pcUI/tips/tips.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/verification/list.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/verification/list_1deed02.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/template/template.js",
+            "web:components/utils/store.js",
+            "common:components/pcUI/tips/tips.js",
+            "common:components/pcUI/tooltip/tooltip.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/verify/verify.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/verify/verify_359a2cd.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/uploader/uploader.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/suggestion/suggestion.js",
+            "common:components/pcUI/cuteTips/cuteTips.js",
+            "common:components/ui/loading/loading.js",
+            "common:components/pcUI/tooltip/tooltip.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/zuyue/addContract.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/zuyue/addContract_8f83e03.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "web:components/bootstrap-datetimepicker/bootstrap-datetimepicker.js",
+            "web:components/dropSelect/dropSelect.js",
+            "common:components/ui/getQueryString/getQueryString.js",
+            "web:components/utils/store.js",
+            "common:components/pcUI/uploader/uploader.js",
+            "common:components/pcUI/tips/tips.js",
+            "common:components/pcUI/tooltip/tooltip.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/zuyue/detail.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/zuyue/detail_d44f118.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/template/template.js",
+            "common:components/ui/getQueryString/getQueryString.js",
+            "common:components/pcUI/tips/tips.js"
+        ],
+        "type": "js"
+    },
+    "web:static/member/user/zuyue/list.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/member/user/zuyue/list_7f0b7a2.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/template/template.js",
+            "web:components/utils/store.js",
+            "common:components/pcUI/pager/pager.js",
+            "common:components/pcUI/tips/tips.js"
+        ],
+        "type": "js"
+    },
+    "web:static/news/detail.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/news/detail_d5f27c5.js",
+        "asyncs": [
+            "common:components/ui/zepto/zepto.js"
+        ],
+        "type": "js"
+    },
+    "web:static/news/list.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/news/list_99ee0a0.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/tips/tips.js",
+            "common:components/ui/template/template.js",
+            "common:components/third-party/dropload/dropload.js",
+            "common:components/third-party/lazyload/lazyload.js"
+        ],
+        "type": "js"
+    },
+    "web:static/news/rank.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/news/rank_6a341a0.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "web:components/dropSelect/dropSelect.js",
+            "common:components/pcUI/pager/pager.js"
+        ],
+        "type": "js"
+    },
+    "web:static/zf/ai/ai.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/zf/ai/ai_71ba522.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/template/template.js",
+            "web:components/dropSelect/dropSelect.js",
+            "common:components/ui/util/storage.js"
+        ],
+        "type": "js"
+    },
+    "web:static/zf/detail/detail.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/zf/detail/detail_84f86b6.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/ui/zepto/zepto.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/tips/tips.js",
+            "common:components/third-party/swiper/swiper.js",
+            "common:components/third-party/lazyload/lazyload.js",
+            "common:components/pcUI/baiduMap/baiduMap.js",
+            "common:components/pcUI/template/template.js",
+            "common:components/ui/loading/loading.js",
+            "common:components/pcUI/tooltip/tooltip.js",
+            "common:components/previewImg/previewImg.js"
+        ],
+        "type": "js"
+    },
+    "web:static/zf/mapSearch/base.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/zf/mapSearch/base_2b2a86a.js",
+        "type": "js"
+    },
+    "web:static/zf/mapSearch/commute-form.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/zf/mapSearch/commute-form_2018788.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/ui/nstSlider/nouislider.js",
+            "common:components/pcUI/nstSlider/nouislider.js",
+            "common:components/pcUI/tips/tips.js",
+            "web:components/utils/store.js"
+        ],
+        "type": "js"
+    },
+    "web:static/zf/mapSearch/index.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/zf/mapSearch/index_91f687f.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/ui/baiduMap/baiduMap.js",
+            "common:components/ui/tips/tips.js",
+            "common:components/ui/getQueryString/getQueryString.js",
+            "common:components/pcUI/tips/tips.js",
+            "web:static/zf/mapSearch/base.js",
+            "web:components/dropSelect/dropSelect.js"
+        ],
+        "type": "js"
+    },
+    "web:static/zf/mapSearch/public-house.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/zf/mapSearch/public-house_972abd5.js",
+        "asyncs": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/ui/baiduMap/baiduMap.js",
+            "common:components/ui/loading/loading.js",
+            "common:components/ui/tips/tips.js",
+            "common:components/ui/getQueryString/getQueryString.js"
+        ],
+        "type": "js"
+    },
+    "web:static/zf/mapSearch/rent-house.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/zf/mapSearch/rent-house_fa938f9.js",
+        "asyncs": [
+            "common:components/ui/zepto/zepto.js",
+            "common:components/ui/baiduMap/baiduMap.js",
+            "common:components/ui/loading/loading.js",
+            "common:components/ui/tips/tips.js",
+            "common:components/ui/getQueryString/getQueryString.js"
+        ],
+        "type": "js"
+    },
+    "web:static/zf/markeylist/markeylist.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/zf/markeylist/markeylist_a69bbdd.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/pager/pager.js",
+            "common:components/pcUI/tips/tips.js"
+        ],
+        "type": "js"
+    },
+    "web:widget/check_modal/check_modal.html": {
+        "css": [
+            "web:widget/check_modal/check_modal.less"
+        ],
+        "isWidget": true
+    },
+    "web:widget/check_modal/check_modal.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/check_modal/check_modal_f3dad6b.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "web:widget/crumbs/crumbs.html": {
+        "css": [
+            "web:widget/crumbs/crumbs.less"
+        ],
+        "isWidget": true
+    },
+    "web:widget/crumbs/crumbs.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/crumbs/crumbs_cfc040a.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "web:widget/footer/footer.html": {
+        "css": [
+            "web:widget/footer/footer.less"
+        ],
+        "asyncs": [
+            "web:widget/footer/footer.js"
+        ],
+        "isWidget": true
+    },
+    "web:widget/footer/footer.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/footer/footer_a7589c5.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js"
+        ],
+        "isWidget": true,
+        "type": "js"
+    },
+    "web:widget/footer/footer.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/footer/footer_69c8c7e.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "web:widget/header/header.html": {
+        "css": [
+            "web:widget/header/header.less"
+        ],
+        "asyncs": [
+            "web:widget/header/header.js"
+        ],
+        "refs": [
+            "web:widget/meta/meta.html"
+        ],
+        "isWidget": true
+    },
+    "web:widget/header/header.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/header/header_b78802a.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/cookie/cookie.js",
+            "common:components/pcUI/tips/tips.js"
+        ],
+        "isWidget": true,
+        "type": "js"
+    },
+    "web:widget/header/header.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/header/header_3bf4d05.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "web:widget/house_owner/house_owner.html": {
+        "css": [
+            "web:widget/house_owner/house_owner.less"
+        ],
+        "asyncs": [
+            "web:widget/house_owner/house_owner.js"
+        ],
+        "isWidget": true
+    },
+    "web:widget/house_owner/house_owner.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/house_owner/house_owner_096339f.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "web:components/dropSelect/dropSelect.js",
+            "common:components/pcUI/tips/tips.js"
+        ],
+        "isWidget": true,
+        "type": "js"
+    },
+    "web:widget/house_owner/house_owner.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/house_owner/house_owner_c218a35.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "web:widget/index/ai/ai.html": {
+        "css": [
+            "web:widget/index/ai/ai.less"
+        ],
+        "asyncs": [
+            "web:widget/index/ai/ai.js"
+        ],
+        "isWidget": true
+    },
+    "web:widget/index/ai/ai.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/index/ai/ai_48adaef.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/ui/util/storage.js",
+            "common:components/pcUI/template/template.js",
+            "web:components/dropSelect/dropSelect.js"
+        ],
+        "isWidget": true,
+        "type": "js"
+    },
+    "web:widget/index/ai/ai.tpl": {
+        "isWidget": true
+    },
+    "web:widget/index/ai/ai.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/index/ai/ai_8ef145f.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "web:widget/index/tools/tools.html": {
+        "asyncs": [
+            "web:widget/index/tools/tools.js",
+            "web:static/zf/mapSearch/commute-form.js"
+        ],
+        "isWidget": true
+    },
+    "web:widget/index/tools/tools.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/index/tools/tools_e21e880.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js"
+        ],
+        "isWidget": true,
+        "type": "js"
+    },
+    "web:widget/loading/loading.html": {
+        "isWidget": true
+    },
+    "web:widget/login/login.html": {
+        "css": [
+            "web:widget/login/login.less"
+        ],
+        "asyncs": [
+            "web:widget/login/login.js"
+        ],
+        "isWidget": true
+    },
+    "web:widget/login/login.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/login/login_f699cd3.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/jsencrypt/jsencrypt.js",
+            "common:components/publickey/publickey.js"
+        ],
+        "isWidget": true,
+        "type": "js"
+    },
+    "web:widget/login/login.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/login/login_258925f.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "web:widget/meta/meta.html": {
+        "css": [
+            "web:static/common/base.css",
+            "common:static/iconfont/iconfont.css"
+        ],
+        "isWidget": true
+    },
+    "web:widget/online_sign/online_sign.html": {
+        "css": [
+            "web:widget/online_sign/online_sign.less"
+        ],
+        "asyncs": [
+            "web:widget/online_sign/online_sign.js"
+        ],
+        "refs": [
+            "web:widget/check_modal/check_modal.html"
+        ],
+        "isWidget": true
+    },
+    "web:widget/online_sign/online_sign.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/online_sign/online_sign_7f59352.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "common:components/pcUI/tips/tips.js"
+        ],
+        "isWidget": true,
+        "type": "js"
+    },
+    "web:widget/online_sign/online_sign.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/online_sign/online_sign_8f5326f.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "web:widget/pager/pager.html": {
+        "asyncs": [
+            "web:widget/pager/pager.js"
+        ],
+        "isWidget": true
+    },
+    "web:widget/pager/pager.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/pager/pager_9f2bc9a.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "web:components/search/jq_dropbox.js"
+        ],
+        "isWidget": true,
+        "type": "js"
+    },
+    "web:widget/search/conditionsearch.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/search/conditionsearch_308f156.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "web:widget/search/conditionsearch.html": {
+        "css": [
+            "web:widget/search/conditionsearch.css"
+        ],
+        "asyncs": [
+            "web:widget/search/conditionsearch.js"
+        ],
+        "isWidget": true
+    },
+    "web:widget/search/conditionsearch.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/search/conditionsearch_5fe7644.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/suggestion/suggestion.js",
+            "common:components/pcUI/tips/tips.js",
+            "web:components/dropSelect/dropSelect.js"
+        ],
+        "isWidget": true,
+        "type": "js"
+    },
+    "web:widget/search/fuzzysearch.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/search/fuzzysearch_0323f8a.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "web:widget/search/fuzzysearch.html": {
+        "css": [
+            "web:widget/search/fuzzysearch.css"
+        ],
+        "asyncs": [
+            "web:widget/search/fuzzysearch.js"
+        ],
+        "isWidget": true
+    },
+    "web:widget/search/fuzzysearch.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/search/fuzzysearch_3ec3e4c.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/suggestion/suggestion.js"
+        ],
+        "isWidget": true,
+        "type": "js"
+    },
+    "web:widget/search/govsearch.html": {
+        "css": [
+            "web:widget/search/conditionsearch.css"
+        ],
+        "asyncs": [
+            "web:widget/search/conditionsearch.js"
+        ],
+        "isWidget": true
+    },
+    "web:widget/search/hot.html": {
+        "isWidget": true
+    },
+    "web:widget/search/search.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/search/search_995f135.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "web:widget/search/search.html": {
+        "css": [
+            "web:widget/search/search.css"
+        ],
+        "asyncs": [
+            "web:widget/search/search.js"
+        ],
+        "isWidget": true
+    },
+    "web:widget/search/search.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/search/search_c0a09e6.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "web:components/search/jq_dropbox.js"
+        ],
+        "isWidget": true,
+        "type": "js"
+    },
+    "web:widget/tip/tip.html": {
+        "css": [
+            "web:widget/tip/tip.less"
+        ],
+        "isWidget": true
+    },
+    "web:widget/tip/tip.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/tip/tip_69b6883.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "web:widget/usersider/index.html": {
+        "css": [
+            "web:widget/usersider/index.less"
+        ],
+        "asyncs": [
+            "web:widget/usersider/index.js"
+        ],
+        "isWidget": true
+    },
+    "web:widget/usersider/index.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/usersider/index_487df1c.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/ui/authAjax/authAjax.js",
+            "common:components/pcUI/tips/tips.js"
+        ],
+        "isWidget": true,
+        "type": "js"
+    },
+    "web:widget/usersider/index.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/usersider/index_a7a1c93.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "web:widget/verify_header/verify_header.html": {
+        "css": [
+            "web:widget/verify_header/verify_header.less"
+        ],
+        "isWidget": true
+    },
+    "web:widget/verify_header/verify_header.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/verify_header/verify_header_6680690.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "web:widget/vfooter/vfooter.css": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/vfooter/vfooter_0154d14.css",
+        "isWidget": true,
+        "type": "css"
+    },
+    "web:widget/vfooter/vfooter.html": {
+        "css": [
+            "web:widget/vfooter/vfooter.css"
+        ],
+        "isWidget": true
+    },
+    "web:widget/yue_look/yue_look.html": {
+        "css": [
+            "web:widget/yue_look/yue_look.less"
+        ],
+        "asyncs": [
+            "web:widget/yue_look/yue_look.js"
+        ],
+        "isWidget": true
+    },
+    "web:widget/yue_look/yue_look.js": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/yue_look/yue_look_42faa3a.js",
+        "asyncs": [
+            "common:components/jquery/jquery.js",
+            "common:components/pcUI/dialog/dialog.js",
+            "web:components/dropSelect/dropSelect.js"
+        ],
+        "isWidget": true,
+        "type": "js"
+    },
+    "web:widget/yue_look/yue_look.less": {
+        "url": "//{{$DOMAIN_STATIC}}/govzf/web/w_/yue_look/yue_look_919ca1e.css",
+        "isWidget": true,
+        "type": "css"
+    }
+}

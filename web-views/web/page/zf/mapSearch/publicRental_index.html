@@ -1,0 +1,19 @@
+@widget('web:header/header')<?php 
+$configure =  $_SERVER['F_GlobalData']['configure'];
+?><div class="map-header-wrap"><h1 class="hf-logo"><a href='{{$xinlong["headSideMenu"]["homeUrl"] or ""}}'></a></h1><div class="search-wrap"><div id="ds_houseType" class="search-field"></div><div id="ds_projState" class="search-field"></div><div id="ds_clear" class="search-field search-clear"><i class="icon iconfont icon-nav_detele"></i><span>全部清空</span></div></div></div><div class="maps-wrap"><div class="loading-tips">数据加载中...</div><div class="bdMap-wrap"><span class="search-panel" id="J_search_panel" style="left: 16px;"><span class="type" data-type="2" title="市场房源">市场房源</span><span class="type" data-type="-1" title="国有房源">国有房源</span><span class="list-icon" id="J_list_icon"><i class="iconfont icon-list_switch"></i><span class="list-icon-name">列表模式</span></span><div id="search_map" class=" "></div></div></div> @widget('web:footer/footer')<script>
+
+    var comConfig = {};
+
+    var _pageDefaultData = {}
+
+    var myConfig = {
+        cityid : '<?php echo $aData["cityId"]; ?>',
+
+        
+    }
+      var _config = {
+      lanlnt:"<?php print_r($configure['lanlnt']['value']) ?>"
+    }
+
+    require.async('web:static/zf/mapSearch/index.js')
+</script>

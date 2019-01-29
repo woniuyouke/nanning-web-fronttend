@@ -1,0 +1,4 @@
+@include('common._static_', ['type' => 'head'])
+<textarea style="display: none;" id="pagelet_ajax_ajax"><section id="ajax">
+hello, i'm ajax
+</section></textarea><script>(function(){var elem = document.getElementById("pagelet_ajax_ajax");elem.value = elem.value.replace(/<\\\\\/textarea>/g, '</textarea>');elem.removeAttribute("id");var nls = [{!!str_replace('\\', '', substr(json_encode($PAGELET_ASYNCS), 1, -1))!!}];require.async(['static/pagelet.js'].concat(nls), function(Pagelet){Pagelet.init(elem)});})()</script>

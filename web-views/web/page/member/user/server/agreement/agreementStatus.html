@@ -1,0 +1,12 @@
+@widget('web:header/header')<div class='user-wrapper clearfix'>  @widget('web:usersider/index')<div class="user-right"><div class="agreement-wrapper"><h2 class="tit">合同备案</h2><div class="form-wrapper clearfix"></div></div><div class="dialog-wrapper" id="set-dialog"><div class="dialog-content"><h2>注销确认</h2><p>您确认要注销备案吗？</p></div><p class="dialog-btn-row"><a class="btn nocancel" id="set-btn">确定</a><a class="btn cancel" id="canal-btn">取消</a></p></div><div class="dialog-wrapper" id="handleBeianToast"><div class="dialog-content"><h2>备案确认</h2><p>是否确认这次备案？</p></div><p class="dialog-btn-row"><a class="btn nocancel">确认备案</a><a class="btn cancel">我再想想</a></p></div><div class="dialog-wrapper" id="cancelBeianToast"><div class="dialog-content"><h2>取消确认</h2><p>是否确认取消这次备案？</p></div><p class="dialog-btn-row"><a class="btn nocancel">确认取消</a><a class="btn cancel">我再想想</a></p></div><div class="dialog-wrapper" id="applyZhuxiaoToast"><div class="dialog-content"><h2>申请注销确认</h2><p>是否确认申请注销这次备案？</p></div><p class="dialog-btn-row"><a class="btn nocancel">申请注销</a><a class="btn cancel">我再想想</a></p></div><div class="dialog-wrapper" id="handleZhuxiaoToast"><div class="dialog-content"><h2>注销确认</h2><p>是否确认注销这次备案？</p></div><p class="dialog-btn-row"><a class="btn nocancel">确认注销</a><a class="btn cancel">我再想想</a></p></div><div class="dialog-wrapper" id="cancelZhuxiaoToast"><div class="dialog-content"><h2>拒绝注销确认</h2><p>是否确认拒绝注销这次备案？</p></div><p class="dialog-btn-row"><a class="btn nocancel">拒绝注销</a><a class="btn cancel">我再想想</a></p></div></div><script type="text/javascript">
+        window.configPager = {
+            contractFillingDetailUrl:'/web/contract/filling/details/useFillingId',
+            getSeeImgUrl:' /web/contract/preview/offlineContractFillingPdf/',
+            getHref:'/web/file/secret/',
+            userInfo:'/web/account/C/baseinfoC',
+        
+
+            sHouseViewUrl: '{{$globalData['sHouseViewUrl']}}'
+        };
+        require.async('web:static/member/user/server/agreement/agreementStatus.js');
+    </script></div> @widget('web:footer/footer')

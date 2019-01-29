@@ -1,0 +1,289 @@
+<?php $filterData = empty($aData['data']['filterData']) ? array() : $aData['data']['filterData'] ?><?php $configure = $_SERVER['F_GlobalData']['configure'];
+     	$showSeo = false;
+     		foreach(@$seoTag as $key =>$item) {     if(!empty($item)) {     $showSeo = true;     }     }     ?> @if(!empty($isCommuting))<div class='commute-find-house clearfix'><div class='commute-house-location icon iconfont icon-list_location'><input type='text' placeholder='请输入公司地址' id='J_input_company'/></div><div class='commute-traffic-type' id='J_traffic_type'></div><div class='commute-traffic-time' id='J_traffic_time'></div><div class='commute-traffic-rent' id='J_traffic_rent'></div><div class='please-find-house' id='J_find_house'>立即找房</div></div> @endif @if(!empty($isCommuting) && !@$showSeo)<div id='J_more_confition' class='more-confidion icon iconfont icon-arrow_down'>展开更多筛选项</div> @endif @if(!empty($isCommuting) && @$showSeo || empty($isCommuting))<div class='content-search-inner' id='J_search_inner'> @endif @if(!empty($isCommuting) && !@$showSeo)<div class='content-search-inner' id='J_search_inner' style='display:none;'> @endif<div class='search-list'><ul class="clearfix"><li class='search-every-title'><strong>{{@$filterData['type']['name']}}：</strong></li> @foreach(@$filterData['type']['list'] as $key => $item) @if($item == '保障房')<li class="jump-out"><a style="color:#333;" target="_blank" href="http://www.nnfcxx.com/baozhangfang/">{{@$item}}</a></li> @else @if(@$key == @$aData['data']['params']['type'])<li 
+		
+					data-search="{{@$filterData['type']['alias']}}{{@$key}}"
+				
+					class='current-selected'>{{@$item}}</li> @else<li 
+				
+					data-search="{{@$filterData['type']['alias']}}{{@$key}}"
+					
+					>{{@$item}}</li> @endif @endif @endforeach</ul> @if(!empty(@$filterData['brandId']) && !empty($aData['data']['params']['type']) && $aData['data']['params']['type'] == 5)<ul class="clearfix"><li class='search-every-title'><strong>{{@$filterData['brandId']['name']}}：</strong></li> @foreach(@$filterData['brandId']['list'] as $key => $item) @if(@$key == @$aData['data']['params']['brandId'])<li 
+	
+				data-search="{{@$filterData['brandId']['alias']}}{{@$key}}"
+			
+				 class='current-selected'>{{@$item}}</li> @else<li 
+			
+				data-search="{{@$filterData['brandId']['alias']}}{{@$key}}"
+				
+				>{{@$item}}</li> @endif @endforeach</ul> @endif<ul class='clearfix'><li class='search-every-title'><strong>地区：</strong></li><li class="{{empty($isMetro) ? 'current-region' : '' }} region" data-search='/list'>按区域<b class='region-arrow'></b></li></ul><div class='region-position{{empty($isMetro) ? '' : '-metro' }}'>
+	         @if(empty($isMetro))
+		     	<ul class='region-parent clearfix'>
+		     	 	@foreach(@$filterData['regions']['list'] as $key => $item)
+		     		 	@if(@$item['id'] == @$aData['data']['params']['regionId'])
+		     			<li data-search="{{@$filterData['regions']['alias']}}{{@$item['id']}}" class='current-selected'>{{@$item['name']}}</li>
+		     		 	@else 
+		     			<li data-search="{{@$filterData['regions']['alias']}}{{@$item['id']}}">{{@$item['name']}}</li>
+		     		 	@endif
+		     	 	@endforeach
+		     	</ul>
+		     	<!-- params 分隔block成数组 -->
+		     	<?php
+		     		if(empty(@$aData['data']['params']['blockId'])) {
+		     			$blockId = array();
+		     		}else {
+		     			$blockId = explode(",", $aData['data']['params']['blockId']);
+		     		}
+		     	?>
+
+		      	@foreach(@$filterData['regions']['list'] as $key => $item)
+		     	<?php $item['child']['list'] = [] ?>      <!--    乐山项目没有板块，板块信息强行置空   -->
+		      	@if(@$item['id'] == @$aData['data']['params']['regionId'] && !empty(@$item['child']['list']))
+		     	<ul class='region-children clearfix'>
+		     	 	@foreach(@$item['child']['list'] as $key => $blockItem)
+		     		 	@if(in_array($blockItem['id'], $blockId) || @$aData['data']['params']['blockId'] == $blockItem['id'])
+		     			 	@if(empty($blockItem['id']))
+		     				<li href='javascript:;' data-search="{{@$item['child']['alias']}}{{@$blockItem['id']}}" class='checkout-box current-selected selected'>{{@$blockItem['name']}}</li>
+		     			 	@else
+		     				<li href='javascript:;' data-search="{{@$item['child']['alias']}}{{@$blockItem['id']}}" class='checkout-box current-selected icon iconfont icon-checkbox_square_sele selected'>{{@$blockItem['name']}}</li>
+		     			 	@endif
+		     		 	@else 
+		     			 	@if(empty($blockItem['id']))
+		     				<li href='javascript:;' data-search="{{@$item['child']['alias']}}{{@$blockItem['id']}}" class='checkout-box'>{{@$blockItem['name']}}</li>
+		     			 	@else
+		     				<li href='javascript:;' data-search="{{@$item['child']['alias']}}{{@$blockItem['id']}}" class='checkout-box icon iconfont icon-checkbox_square_unse'>{{@$blockItem['name']}}</li>
+		     			 	@endif
+		     		 	@endif
+		     	 	@endforeach
+		     	</ul>
+		      	@endif
+		      	@endforeach
+		     @else
+		    	<ul class='region-parent clearfix'>
+		     	 	@foreach(@$filterData['subway']['list'] as $key => $item)
+		     		 	@if(@$item['id'] == @$aData['data']['params']['line'])
+		     			<li data-search="{{@$filterData['subway']['alias']}}{{@$item['id']}}" class='current-selected'>{{@$item['name']}}</li>
+		     		 	@else 
+		     			<li data-search="{{@$filterData['subway']['alias']}}{{@$item['id']}}">{{@$item['name']}}</li>
+		     		 	@endif
+		     	 	@endforeach
+		     	</ul>
+		     	<!-- params 分隔station成数组 -->
+		     	<?php
+		     		if(empty(@$aData['data']['params']['station'])) {
+		     			$station = array();
+		     		}else {
+		     			$station = explode(",", $aData['data']['params']['station']);
+		     		}
+		     	?>
+		      	@foreach(@$filterData['subway']['list'] as $key => $item)
+		      	@if(@$item['id'] == @$aData['data']['params']['line'] && !empty(@$item['child']['list']))
+			     	<ul class='region-children clearfix'>
+			     	 	@foreach(@$item['child']['list'] as $key => $blockItem)
+			     		 	@if(in_array(@$blockItem['id'], $station) || @$aData['data']['params']['station'] == @$blockItem['id'])
+			     			 	@if(empty($blockItem['id']))
+			     				<li href='javascript:;' data-search="{{@$item['child']['alias']}}{{@$blockItem['id']}}" class='checkout-box current-selected selected'>{{@$blockItem['name']}}</li>
+			     			 	@else 
+			     				<li href='javascript:;' data-search="{{@$item['child']['alias']}}{{@$blockItem['id']}}" class='checkout-box current-selected icon iconfont icon-checkbox_square_sele selected'>{{@$blockItem['name']}}</li>
+			     			 	@endif
+			     		 	@else 
+			     			 	@if(empty($blockItem['id']))
+			     				<li href='javascript:;' data-search="{{@$item['child']['alias']}}{{@$blockItem['id']}}" class='checkout-box'>{{@$blockItem['name']}}</li>
+			     			 	@else
+			     				<li href='javascript:;' data-search="{{@$item['child']['alias']}}{{@$blockItem['id']}}" class='checkout-box icon iconfont iconfont icon-checkbox_square_unse'>{{@$blockItem['name']}}</li>
+			     			 	@endif
+			     		 	@endif
+			     	 	@endforeach
+			     	</ul>
+		      	@endif
+		      	@endforeach
+		     @endif
+		   
+     	</div>
+        <!-- 租金部分 -->
+     	<ul class='clearfix'>
+     		<li class='search-every-title'><strong>{{@$filterData['priceRange']['name']}}：</strong></li>
+     	 	@foreach(@$filterData['priceRange']['list'] as $key => $item)
+     		 	@if(@$item['value'] == @$aData['data']['params']['priceRange'])
+     			<li data-search="{{@$filterData['priceRange']['alias']}}{{@$item['value']}}" class='current-selected'>{{@$item['name']}}</li>
+     			<?php $isCustomPrice = true; ?>
+     		 	@else 
+     			<li data-search="{{@$filterData['priceRange']['alias']}}{{@$item['value']}}">{{@$item['name']}}</li>
+     		 	@endif
+     	 	@endforeach
+     		<li class='input-box clearfix'>
+     			<input type='text' value="{{ empty($isCustomPrice) ? @$aData['data']['params']['priceMin'] : ''}}"/>
+     			<span>&nbsp;-&nbsp;</span>
+     			<input type='text' value="{{ empty($isCustomPrice) ? @$aData['data']['params']['priceMax'] : ''}}"/>
+     			<span style='margin-left:6px;'>元</span>
+     		 	@if((!empty(@$aData['data']['params']['priceMax']) || !empty(@$aData['data']['params']['priceMin'])) && empty($isCustomPrice) )
+     			<span class='confirm-btn' data-search="{{@$filterData['priceRange']['alias']}}" >确定</span>
+     		 	@else
+     			<span class='confirm-btn' data-search="{{@$filterData['priceRange']['alias']}}" style='display:none;'>确定</span>
+     		 	@endif
+     		</li>
+     	</ul>
+
+     	<!-- 面积部分 -->
+     	<ul class='clearfix'>
+     		<li class='search-every-title'><strong>{{@$filterData['spaceRange']['name']}}：</strong></li>
+     	 	@foreach(@$filterData['spaceRange']['list'] as $key => $item)
+     		 	@if(@$item['value'] == @$aData['data']['params']['spaceRange'])
+     			<li data-search="{{@$filterData['spaceRange']['alias']}}{{@$item['value']}}" class='current-selected'>{{@$item['name']}}</li>
+     			<?php $isCustomSpace = true; ?>
+     		 	@else 
+     			<li data-search="{{@$filterData['spaceRange']['alias']}}{{@$item['value']}}">{{@$item['name']}}</li>
+     		 	@endif
+     	 	@endforeach
+     		<li class='input-box clearfix'>
+     			<input type='text' value="{{ empty($isCustomSpace) ? @$aData['data']['params']['spaceMin'] : ''}}"/>
+     			<span>&nbsp;-&nbsp;</span>
+     			<input type='text' value="{{ empty($isCustomSpace) ? @$aData['data']['params']['spaceMax'] : ''}}"/>
+     			<span style='margin-left:6px;'>平</span>
+     		 	@if((!empty(@$aData['data']['params']['spaceMax']) || !empty(@$aData['data']['params']['spaceMin'])) && empty($isCustomSpace))
+     			<span class='confirm-btn' data-search="{{@$filterData['spaceRange']['alias']}}" >确定</span>
+     		 	@else
+     			<span class='confirm-btn' data-search="{{@$filterData['spaceRange']['alias']}}" style='display:none;'>确定</span>
+     		 	@endif
+     		</li>
+     	</ul>
+     	<!--roomNum分隔成数组-->
+     	<?php
+     		if(empty(@$aData['data']['params']['roomNum'])) {
+     			$roomNum = array();
+     		}else {
+     			$roomNum = explode(",", $aData['data']['params']['roomNum']);
+     		}
+		 ?>
+     	<!-- 户型 -->
+     	<ul class='clearfix'>
+     		<li class='search-every-title'><strong>{{@$filterData['roomNum']['name']}}：</strong></li>
+     	 	@foreach(@$filterData['roomNum']['list'] as $key => $item)
+     		 	@if(in_array($key, $roomNum) || empty($key) && empty(@$aData['data']['params']['roomNum']))
+     			 	@if(empty($key))
+     					<li data-search="{{@$filterData['roomNum']['alias']}}{{@$key}}" class='checkout-box current-selected selected'>{{@$item}}</li>
+     			 	@else
+     					<li data-search="{{@$filterData['roomNum']['alias']}}{{@$key}}" class='checkout-box current-selected icon iconfont icon-checkbox_square_sele selected'>{{@$item}}</li>
+     			 	@endif
+     		 	@else 
+     			 	@if(empty($key))
+     				<li data-search="{{@$filterData['roomNum']['alias']}}{{@$key}}" class='checkout-box'>{{@$item}}</li>
+     			 	@else
+     				<li data-search="{{@$filterData['roomNum']['alias']}}{{@$key}}" class='checkout-box icon iconfont iconfont icon-checkbox_square_unse'>{{@$item}}</li>
+     			 	@endif
+     		 	@endif
+     	 	@endforeach
+     	</ul>
+
+     	<ul class='clearfix'>
+     		<li class='search-every-title'><strong>更多：</strong></li>
+     		<li  class='select-drop-box' id='J_rent_type'>
+     			
+     		</li>
+     		<!-- <li class='select-drop-box' id='J_house_source'>
+     			
+     		</li> -->
+     	</ul>
+     	
+      	@if(!empty($showSeo))
+     	<p class='selected-condition clearfix'>
+     		<strong class='selected-condition-title'>已选条件</strong>
+     	 	@foreach(@$seoTag as $key => $item)
+     		 	@if(!empty($item))
+     			<span class='every-selected-condition' data-search='{{@$key}}'>{{@$item}}</span>
+     		 	@endif
+     	 	@endforeach
+     		<span class='all-delete-condition icon iconfont icon-nav_detele'>全部清空</span>
+     	</p>
+      	@endif
+	</div>
+</div>
+<script type="text/javascript">
+		var _config = {
+		location:"<?php echo $configure['shortName']['value'] ?>"
+	}
+	//出租方式
+	<?php 
+		$rentType = @$filterData['rentType']['list'];
+		$rentTypeList = array();
+		$rentIndex = 0;
+		foreach(@$rentType as $k => $item) {
+			$every = array();
+			$every['key'] = @$filterData['rentType']['alias'].$k;
+			$every['value'] = $item;
+			$rentTypeList[$rentIndex++] = $every;
+		}
+	?>
+	//房源类型
+	<?php 
+		$type = @$filterData['type']['list'];
+		$typeList = array();
+		$typeIndex = 0;
+		foreach(@$type as $k => $item) {
+			$every = array();
+			$every['key'] = @$filterData['type']['alias'].$k;
+			$every['value'] = $item;
+			$typeList[$typeIndex++] = $every;
+		}
+	?>
+	//交通方式
+	<?php 
+		$trafficType = @$filterData['trafficType']['list'];
+		$trafficTypeList = array();
+		$trafficTypeIndex = 0;
+		foreach(@$trafficType as $k => $item) {
+			$every = array();
+			$every['key'] = $k;
+			$every['value'] = $item;
+			$trafficTypeList[$trafficTypeIndex++] = $every;
+		}
+	?>
+	//交通时间
+	<?php 
+		$trafficTime = @$filterData['trafficTime']['list'];
+		$trafficTimeList = array();
+		$trafficTimeIndex = 0;
+		foreach(@$trafficTime as $k => $item) {
+			$every = array();
+			$every['key'] = $k;
+			$every['value'] = $item;
+			$trafficTimeList[$trafficTimeIndex++] = $every;
+		}
+	?>
+	//租金
+	<?php
+		$priceRange = @$filterData['priceRange']['list'];
+		$priceRangeList = array();
+		$priceRangeIndex = 0;
+		foreach(@$priceRange as $k => $item) {
+			$every = array();
+			$every['key'] = @$filterData['priceRange']['alias'].$item['value'];
+			$every['value'] = $item['name'];
+			$priceRangeList[$priceRangeIndex++] = $every;
+		}
+	?>
+	//获取全局变量
+	window.configSelect = {
+		typeList: '<?php echo json_encode($typeList) ?>',//公寓类型
+		rentTypeList: '<?php echo json_encode($rentTypeList) ?>',//出租方式
+		trafficTypeList: '<?php echo json_encode($trafficTypeList) ?>',//交通方式
+		trafficTimeList: '<?php echo json_encode($trafficTimeList) ?>',//交通时间
+		priceRangeList: '<?php echo json_encode($priceRangeList) ?>',//租金
+
+		rentTypeTitle: "{{@$filterData['rentType']['name']}}",
+		typeTitle: "{{@$filterData['type']['name']}}",
+		trafficTypeTitle: "{{@$filterData['trafficType']['name']}}",
+		trafficTimeTitle: "{{@$filterData['trafficTime']['name']}}",
+		priceRangeTitle: "{{@$filterData['priceRange']['name']}}",//租金
+
+		rentValue: "{{@$filterData['rentType']['alias'].@$aData['data']['params']['rentType']}}",
+		typeValue: "{{@$filterData['type']['alias'].@$aData['data']['params']['type']}}",
+		trafficTypeValue: "{{@$aData['data']['params']['trafficType']}}",
+		trafficTimeValue: "{{@$aData['data']['params']['trafficTime']}}",
+		priceRangeValue: "{{@$filterData['priceRange']['alias'].@$aData['data']['params']['priceRange']}}",
+		priceRange: "{{@$aData['data']['params']['priceRange']}}"
+
+	}
+	
+    require.async('web:widget/search/conditionsearch.js');
+</script>

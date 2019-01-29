@@ -1,0 +1,62 @@
+@widget('web:header/header')<?php 
+$configure =  $_SERVER['F_GlobalData']['configure'];
+?><div class="map-header-wrap"><h1 class="hf-logo"><a href="/pc"></a></h1><div class="search-wrap"><div id="ds_rentprice" class="search-field"></div><div id="ds_layout" class="search-field"></div><div id="ds_area" class="search-field"></div><div id="ds_rentstyle" class="search-field"></div><div id="ds_source" class="search-field"></div><div id="ds_clear" class="search-field search-clear"><i class="icon iconfont icon-nav_detele"></i><span>全部清空</span></div></div></div><div class="maplists-wrap"><div class="main"><div class="main-header" id="J_maplist_header"><div class="title"></div><div class="position"></div><div class="crumb"></div></div><div class="tips" id="J_maplist_tips"></div><div class="list" id=""><div class="area-list" id="J_area_list"></div><div class="house-list list-detail" id="J_house_list"></div></div></div></div><div class="toggle-icon" id="J_toggle_icon" data-type="0"><i class="icon iconfont icon-triangle_down-copy"></i></div><div class="maps-wrap"><div class="loading-tips">数据加载中...</div><div class="bdMap-wrap"><span class="list-icon" id="J_list_icon"><i class="iconfont icon-list_switch"></i><span class="list-icon-name">列表模式</span></span><div id="search_map" class=" "></div></div></div> @widget('web:footer/footer')<script>
+
+    var comConfig = {};
+
+    var _pageDefaultData = {
+        areaSelectData: [
+            { key: '0_30', value: '30m²以下' },
+            { key: '30_50', value: '30-50m²' },
+            { key: '50_70', value: '50-70m²' },
+            { key: '70_90', value: '70-90m²' },
+            { key: '90_110', value: '90-110m²' },
+            { key: '110_130', value: '110-130m²' },
+            { key: '130_150', value: '130-150m²' },
+            { key: '150_999999', value: '150m²以上' },
+        ],
+        layoutSelectData: [
+            { key: 1, value: '一室' },
+            { key: 2, value: '二室' },
+            { key: 3, value: '三室' },
+            { key: 4, value: '四室' },
+            { key: 5, value: '五室' },
+            { key: 6, value: '五室以上' },
+        ],
+        rentSelectData: [
+            { key: '0_1500', value: '1500元以下' },
+            { key: '1500_2000', value: '1500-2000元' },
+            { key: '2000_3000', value: '2000-3000元' },
+            { key: '3000_4000', value: '3000-4000元' },
+            { key: '4000_5000', value: '4000-5000元' },
+            { key: '5000_999999', value: '5000元以上' },
+        ],
+        rentStyleSelectData: [
+            { key: 1, value: '整租' },
+            { key: 2, value: '合租' },
+        ],
+        marketHouseData:[
+            {key: 2, value: '租赁企业'},         
+            {key: 3, value: '个人房源'},
+            {key: 4, value: '中介房源'},
+            {key: 6, value: '开发企业自持房源'}
+        ],
+        allHouseData:[
+            {key: 2, value: '租赁企业'},
+            {key: 3, value: '个人房源'},
+            {key: 4, value: '中介房源'},
+            {key: 6, value: '开发企业自持房源'},         
+            {key: 102, value: '国有租赁企业房源'},         
+            {key: 103, value: '保障房'},         
+            {key: 104, value: '人才公寓'},         
+            {key: 105, value: '单位租赁房'},         
+            {key: 106, value: '竞配产权房'},         
+        ]
+    }
+
+    var _config = {
+      lanlnt:"<?php print_r($configure['lanlnt']['value']) ?>"
+    }
+
+    require.async('web:static/zf/mapSearch/index.js')
+</script>

@@ -1,0 +1,36 @@
+<!Doctype html><head><meta http-equiv="Content-Type" content="text/html; charset=@yield('charset', 'utf-8')" /><title>住房租赁交易服务平台</title><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta content="no" name="apple-mobile-web-app-capable"><meta content="yes" name="apple-touch-fullscreen"><meta content="telephone=no" name="format-detection"> @if(isset($aData['sUserscalable']) && $aData['sUserscalable'] == 'yes' )<meta name="viewport" content="initial-scale=1, maximum-scale=2.0, minimum-scale=1, user-scalable=$aData['sUserscalable'] "> @else<meta name="viewport" content="initial-scale=1, maximum-scale= 1, minimum-scale=1, user-scalable=no"> @endif<meta name="keywords" content="{{$headerData['sKeyWords']}}"/><meta name="description" content="{{$headerData['sDesc']}}"><meta property="wb:webmaster" content="a4a189bbb75090ea" /><script type="text/javascript" head>
+    window.comConfig = {
+        baseDomain : "{{ $pub['baseDomain'] ? $pub['baseDomain'] : '' }}",
+        <?php if(isset($reRem) && !empty($reRem)) {?>
+            reRem: '<?= $reRem ?>'
+        <?php } ?>
+    };
+</script><link rel="Shortcut Icon" href="//{{$DOMAIN_STATIC}}/govzf/common/img/favicon_e28d105.png" />
+@include('common._static_', ['type' => 'head'])
+</head><script type="text/javascript">
+    window.config = {
+        'aURL': {
+            'sDFSUpd': '<?=@$globalData["sDFSUpd"]?>',
+            'sStaticDomain': '<?=@$globalData["sStaticDomain"]?>',
+            'sDFSViewDomain': '<?=@$globalData["sDFSViewDomain"]?>',
+            'sMemberDomain': '<?=@$globalData["sMemberDomain"]?>',
+            'sDFSRootDomain': '<?=@$globalData["sDFSRootDomain"]?>',
+            'sStaticRoot': '<?=@$globalData["sStaticRoot"]?>'
+        }
+    };
+</script><script type="text/javascript">;
+    (function(root) {
+        root._tt_config = true;
+        var ta = document.createElement('script'); ta.type = 'text/javascript'; ta.async = true;
+        ta.src = document.location.protocol + '//' + 's3.pstatp.com/bytecom/resource/track_log/src/toutiao-track-log.js';
+        ta.onerror = function () {
+            var request = new XMLHttpRequest();
+            var web_url = window.encodeURIComponent(window.location.href);
+            var js_url  = ta.src;
+            var url = '//ad.toutiao.com/link_monitor/cdn_failed?web_url=' + web_url + '&js_url=' + js_url + '&convert_id=66424839598';
+            request.open('GET', url, true);
+            request.send(null);
+        }
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ta, s);
+    })(window);
+</script><body><?php $pgId = isset($pageId) ? $pageId : $globalData['sPGID']; ?><span id="J_page_msg" data-pageid="{{ $pgId }}" data-servertime="{{$globalData['iPrsTime']}}"></span>

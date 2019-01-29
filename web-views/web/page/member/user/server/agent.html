@@ -1,0 +1,7 @@
+@widget('web:header/header')<div class='user-wrapper clearfix'>  @widget('web:usersider/index')<div class="user-right"><div class="agent-wrapper"><h2 class="tit">房地产经纪人查询</h2><div class="agent-list"><div class="agent"><div class="search-wrapper clearfix"><div class="item">执业证号</div><input type="text" class="search-box" placeholder="请输入" id="agent-business"><div class="item">姓名</div><input type="text" class="search-box" placeholder="请输入" id="agent-name"><div class="agent-search" id="agent-search">查询</div><div class="agent-reset" id="agent-reset">重置</div></div><ul class="agent-title clearfix"><li>姓名</li><li>执业证号</li><li>执业公司</li><li>从业年限</li></ul><div class='agent-container' id='agent-container-list'></div><div class="get-data clearfix"><div class="get-data-left">找到符合要求的数据<span class="num">0</span>条</div><div class="get-data-right"><div class="pagenation" id='agent_pagenation'></div></div></div></div></div></div></div></div><script>
+    window.configPager = {
+        agentListUrl: '/web/account/info/CList',
+        page:"<?php echo strFilterHtml($_GET['page']) ?>",
+    };
+    require.async('web:static/member/user/server/agent/agent.js');
+</script> @widget('web:footer/footer')

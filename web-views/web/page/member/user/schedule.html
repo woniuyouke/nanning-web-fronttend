@@ -1,0 +1,16 @@
+@widget('web:header/header')<?php
+
+$moduleConfig = $_SERVER['F_GlobalData']['moduleConfig'];
+$configure = $_SERVER['F_GlobalData']['configure'];
+//dd($moduleConfig);
+?><div class='user-wrapper clearfix'>  @widget('web:usersider/index')<div class='user-right'><div class='yuyue-list'>  @if($moduleConfig['C2COrderHouse'])<ul class='nav clearfix'><li class='nav-child current'><a href='javascript:;'>提交的预约看房</a></li><li class='nav-child'><a href='javascript:;'>收到的看房申请</a></li></ul>  @endif</div><div class="zuke-wrapper" id="J_schedule-wrapper"><div class="account-wrapper schedule-wrapper no-data hide"><div class="account-content"><p><img src="//{{$DOMAIN_STATIC}}/govzf/web/member/user/schedule/Rectangle 10@2x_0f0dd95.png"></p><p>您还没有看房日程</p></div></div></div><div class="fangdong-wrapper" id="F_schedule-wrapper"><div class="account-wrapper schedule-wrapper no-data hide"><div class="account-content"><p><img src="//{{$DOMAIN_STATIC}}/govzf/web/member/user/schedule/Rectangle 10@2x_0f0dd95.png"></p><p>您还没有看房日程</p></div></div></div></div></div><div class="dialog-wrapper cancel-yuyue-wrapper" id="cancel-yuyue"><a class="close-btn iconfont icon-close_ic"></a><p class="tit">取消确认</p><div class="dialog-content"><div class="dialog-notice">好房不等人，确认取消预约？</div><div class="dialog-btns clearfix"><div class="sureBtn btn">取消预约</div><div class="calBtn btn">我再想想</div></div></div></div> @widget('web:house_owner/house_owner')<script>
+  var pageConfig = {
+    sHouseViewUrl: '{{$globalData['sHouseViewUrl']}}',
+    loadImg: "/static/member/common/imgs/img_loading_256_192.png",
+    pick_date_list: <?php echo isset($pick['pick_date_list']) ? json_encode($pick['pick_date_list']) : '' ?>,
+    pick_time_list: <?php echo isset($pick['pick_time_list']) ? json_encode($pick['pick_time_list']) : '' ?>,
+  };
+  var default_img='//{{$DOMAIN_STATIC}}/govzf/web/common/default/image_loading_256_192_79ae923.png';
+  var owner_img = '//{{$DOMAIN_STATIC}}/govzf/web/member/user/mySendRoom/img/landlord_ff45291.png';
+  require.async(['web:static/member/user/schedule/index.js'])
+</script> @widget('web:footer/footer')

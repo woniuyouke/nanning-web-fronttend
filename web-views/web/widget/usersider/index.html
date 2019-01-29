@@ -1,0 +1,43 @@
+<?php
+$moduleConfig = $_SERVER['F_GlobalData']['moduleConfig'];
+?><div class='sider-wrapper'><div class='user-info clearfix'><p class='user-pic'><img src='//{{$DOMAIN_STATIC}}/govzf/web/common/avatar_mine_verified_d9b3c35.png'></p><p class='user-phone'>{{$globalData['userInfo']['accountInfo']['mobile']}}</p></div><?php
+    $uri = $_SERVER['PHP_SELF'];
+    $userNavCur = '';
+    if (strpos($uri, '/follow.html') !== false) {
+        $userNavCur = '我的关注';
+    } elseif (strpos($uri, '/user/schedule/list') !== false) {
+        $userNavCur = '看房日程';
+    } elseif (strpos($uri, '/user/setting') !== false || strpos($uri, '/user/authinfo') !== false || strpos($uri, '/user/account/chMobAc') !== false || strpos($uri, '/user/account/resetLp') !== false) {
+        $userNavCur = '账号设置';
+    } elseif (strpos($uri, '/user/conice') !== false || strpos($uri, '/company') !== false || strpos($uri, '/agent/list') !== false) {
+        $userNavCur = '便民服务';
+    } elseif (strpos($uri, '/publishHouse/list') !== false){
+        $userNavCur = '我发布的房源';
+    } elseif (strpos($uri, '/user/zuyue/list') !== false || strpos($uri, '/user/zuyue/detail')) {
+        $userNavCur = '我的租约';
+    } elseif (strpos($uri, '/pc/user/beian/list') !== false || strpos($uri, '/pc/user/beian/detail') !== false || strpos($uri, '/user/beian/agreementStatus') !==false){
+        $userNavCur = '合同备案';
+    }elseif(strpos($uri,'user/publicrental/progress')){
+        $userNavCur = '进度查询';
+    }elseif(strpos($uri,'user/listOfBills')){
+        $userNavCur = '房租支付';
+    }elseif(strpos($uri,'user/cardList')){
+        $userNavCur = '我的钱包';
+    }elseif(strpos($uri,'user/bankCard')){
+        $userNavCur = '我的银行卡';
+    }elseif(strpos($uri,'publishHouse/list')){
+        $userNavCur = '我发布的房源';
+    }elseif(strpos($uri,'user/verification/list') || strpos($uri,'/pc/verify/edit') !== false || strpos($uri,'/user/verification/detail') !== false){
+        $userNavCur = '我核验的房源';
+    }
+
+    ?><ul class='user-bar'>  @if($moduleConfig['followMarketHouse']||$moduleConfig['followPublicRental'])<li class='icon iconfont icon-account_attention <?php echo $userNavCur == '我的关注' ? 'selected' : '' ?>'><a
+                    href='{{$xinlong["headSideMenu"]["followUrl"] or ""}}'>我的关注</a></li>  @endif  @if($moduleConfig['orderHouse']&&$moduleConfig['C2COrderHouse'])<li class='icon iconfont icon-account_schedule <?php echo $userNavCur == '看房日程' ? 'selected' : '' ?>'><a
+                    href='{{$xinlong["headSideMenu"]["scheduleListUrl"] or ""}}'>看房日程</a></li>  @endif         @if($moduleConfig['C2BSign']&&$moduleConfig['C2CSign'])<li class='icon iconfont icon-account_schedule <?php echo $userNavCur == '房租支付' ? 'selected ' : ' ' ?>'><a href='/pc/user/listOfBills'>房租支付</a></li><li class='icon iconfont icon-menu_bankcard_outlin <?php echo $userNavCur == '我的银行卡' ? 'selected ' : ' ' ?>'><a href='/pc/user/bankCard'>我的银行卡</a></li><li class='icon iconfont icon-account_wallet <?php echo $userNavCur == '我的钱包' ? 'selected ' : ' ' ?>'><a href='javascript:;' id="J_userside_myWallet" data-jurl="/pc/user/cardList">我的钱包</a></li><li class='icon iconfont icon-account_contract <?php echo $userNavCur == '我的租约' ? 'selected' : '' ?>'><a 
+            href="/pc/user/zuyue/list">我的租约</a></li>  @endif<li class='icon iconfont <?php echo $userNavCur == '合同备案' ? 'icon-hetongbeian_current selected' : 'icon-hetongbeian_default' ?>'><a href="/pc/user/beian/list">合同备案</a></li>  @if($moduleConfig['publishHouse'])<li class='icon iconfont icon-account_rental_mine <?php echo $userNavCur == '我发布的房源' ? 'selected' : '' ?>'><a href="/pc/publishHouse/list">我发布的房源</a></li>  @endif         @if($moduleConfig['account'])<li class='icon iconfont icon-account_set <?php echo $userNavCur == '账号设置' ? 'selected' : '' ?>'><a
+                    href='{{$xinlong["headSideMenu"]["settingUrl"] or ""}}'>账号设置</a></li>  @endif<li class='icon iconfont  <?php echo $userNavCur == '我核验的房源' ? 'icon-heyan_current selected' : 'icon-heyan_default1' ?>'><a
+                href='/pc/user/verification/list'>我核验的房源</a></li><li class='icon iconfont icon-account_service <?php echo $userNavCur == '便民服务' ? 'selected' : '' ?>'><a
+                href='{{$xinlong["headSideMenu"]["coniceUrl"] or ""}}'>便民服务</a></li></ul>  @if($moduleConfig['publishHouse'])<div class='send-room'><a href="/pc/publishHouse/edit?id="
+               class='icon iconfont icon-account_rental'>我要发房</a></div>  @endif</div><script>
+require.async(['web:widget/usersider/index.js']);
+</script>

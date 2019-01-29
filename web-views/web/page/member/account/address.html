@@ -1,0 +1,7 @@
+@widget('web:header/header')<div class='user-wrapper clearfix'>  @widget('web:usersider/index')<div class='user-right'><div id="J_set_step1" class="account-wrapper"><h2>修改通信地址</h2><div class="account-content account-mobile-wrapper"><p>通信地址将记录在您签订的合同中，请如实录入</p><p class="input-row mt-32 addr"><label class="w114">所在地区</label><span id="addrInput"><input type="text" id='J_area' data-id='' placeholder="选择所在区域" readonly><i class='iconfont icon-arrow_down'></i><span class='dropDiv'><span class='drop_tit'>默认已选：<span>{{$city}}</span></span><br><span class='drop_body'>  @foreach($region as $item)<span data-id='{{$item['district_code']}}'>{{$item['name']}}</span>  @endforeach</span></span></span></p><p class="input-row mt-16"><label class="w114">详细地址</label><input type="text" id="J_address" placeholder="请输入具体路名及门牌号"></p><p class="input-row mt-16"><label class="w114">邮政编码</label><input type="text" id="J_postCode" placeholder="请填写邮政编码" oninput="if(value.length>6)value=value.slice(0,6)"></p><p class="error-row"><label class="w114"></label><span class="error-msg"></span></p><p class="btn-row"><label class="w114"></label><a class="btn" id="J_validate">保存</a></p></div></div></div></div></div><script>
+    var mypage = {
+        config : <?php echo json_encode($region); ?>
+
+    }
+    require.async('web:static/member/account/address/address.js')
+</script>  @widget('web:footer/footer')

@@ -1,0 +1,169 @@
+@widget('web:header/header')<?php
+$moduleConfig = $_SERVER['F_GlobalData']['moduleConfig'];
+?><div class='house-wrapper'>  @if($moduleConfig['houseInfo']&&$moduleConfig['searchMarketHouse'])         @widget('web:search/fuzzysearch')     @endif<div class='content-wrapper'><div class='content-inner'><div class='content-header clearfix'><div class='content-header-left clearfix'>  @foreach($breadCrumbs as $k => $item)                         @if(!empty($item['link']))<a href="{{$item['link']}}">{{$item['name']}}</a>  @else<span>&nbsp;>&nbsp;{{$item['name']}}</span>  @endif                     @endforeach</div><div class='content-header-right'></div></div>  @if($moduleConfig['houseInfo']&&$moduleConfig['searchMarketHouse'])<div class='content-search'><p class='tabs-search clearfix'><span class="tabs {{!empty($isCommuting) ? '' : 'tabs-selected' }}"
+                          data-search='/pc/common'>综合找房</span>  @if(false && $moduleConfig['houseInfo']&&$moduleConfig['map'])<a href='{{@$aData['data']['mapHouseUrl']}}'>地图找房</a>  @endif                     @if(false && $moduleConfig['houseInfo']&&$moduleConfig['commuting'])<span class="tabs {{!empty($isCommuting) ? 'tabs-selected' : '' }}"
+                              data-search='/pc/commuting'>通勤找房</span>  @endif</p>  @widget('web:search/conditionsearch')</div>  @endif<div class='house-centent-list'><div class='house-list-header clearfix'><p class='header-left'>共找到<span>{{@$aData['houseList']['total']}}</span>个房源</p><p class='header-right'><span class='newer {{empty(@$aData['data']['params']['orderType']) ? 'current' : ''}}'
+                              data-search='ob'>综合排序</span>
+
+                         @if(@$aData['data']['params']['orderType'] == 2 || @$aData['data']['params']['orderType'] == 1)
+                            <span
+                                class="price current icon iconfont {{@$aData['data']['params']['orderType'] == 2 ? 'icon-arrow_fall' : 'icon-arrow_rise' }}"
+                                data-search='ob{{@$aData['data']['params']['orderType'] == 1 ? 2 : 1}}'>按价格</span>
+                         @else
+                            <span class='price icon iconfont icon-arrow_rise' data-search='ob2'>按价格</span>
+                         @endif
+                         @if(@$aData['data']['params']['orderType'] == 5 || @$aData['data']['params']['orderType'] == 6)
+                            <span
+                                class="area current icon iconfont {{@$aData['data']['params']['orderType'] == 6 ? 'icon-arrow_fall' : 'icon-arrow_rise' }}"
+                                data-search='ob{{@$aData['data']['params']['orderType'] == 5 ? 6 : 5}}'>按面积</span>
+                         @else
+                            <span class='area icon iconfont icon-arrow_rise' data-search='ob6'>按面积</span>
+                         @endif
+                    </p>
+                </div>
+                <ul class='house-list-wrapper'>
+                     @foreach(@$aData['houseList']['list'] as $key => $item)
+                        <li class='house-every-item'>
+                            <dl class='detail-pic clearfix'>
+                                <dt class='pic'>
+                                    <a  class="{{@$item['rentStatus'] === 1 ? 'link-ban' : '' }}"  href='{{@$item['url']}}'>
+                                        <img src="{{@$item['picUrls'][0]}}" title='图片'>
+                                         @if(@$item['houseType'])
+                                            <?php
+                                            if ($item['houseType'] == '3') {
+                                                $houseType = 'house-type-gr';
+                                            }
+                                            if ($item['houseType'] == '4') {
+                                                $houseType = 'house-type-zj';
+                                            }
+                                            if ($item['houseType'] == '2') {
+                                                $houseType = 'house-type-zlqy';
+                                            }
+                                            if ($item['houseType'] == '5') {
+                                                $houseType = 'house-type-gy';
+                                            }
+                                            if ($item['houseType'] == '6') {
+                                                $houseType = 'house-type-kfqy';
+                                            }
+                                            ?>
+                                            <span class="house-type {{@$houseType}}"></span>
+                                         @endif
+                                    </a>
+                                     @if(@$item['category'] && @$item['category'] == 2)
+                                        <span class='roomcount'>统一装修户型&nbsp;共{{@$item['roomCount']}}间</span>
+                                     @endif
+
+                                    <!--  @if(@$item['subTags'] && @$item['subTags'] == 1)
+                                        <span class='business'></span>
+                                     @endif -->
+
+                                </dt>
+                                <dd class="detail clearfix {{@$item['rentStatus'] === 1 ? 'rented-sign' : '' }}">
+                                     @if(isset($item['govHouseNumber']))
+                                    <div class="house-num">
+                                        <p style="color:white">南宁市住房局房源核验码</p>
+                                        <p>{{$item['govHouseNumber'] or ''}}</p>
+                                    </div>
+                                     @endif
+                                    <div class='detail-left'>
+                                        <p class='title'>
+                                            <a class="{{@$item['rentStatus'] === 1 ? 'link-ban' : '' }}"  href="{{@$item['url']}}">{{@$item['title']}}</a>
+                                            <!--  @if(@$item['isGuaranty'])
+                                                <span class='tag'>信用免押</span>
+                                             @endif -->
+                                        </p>
+                                        <p class='huxing'>{{@$item['rentType'] == 1 ? '整租&nbsp;·&nbsp;' : '合租&nbsp;·&nbsp;'}}
+                                            {{($item['roomNum'] != 0 || $item['hallNum'] != 0 || $item['toiletNum'] != 0) ? $item['layout'].'&nbsp;·&nbsp;' : ''}}{{@$item['area']}}</p>
+                                        <p class='location'>{{$item['locationName'] or ''}}&nbsp;{{$item['cityName'] or ''}}{{$item['locationName'] or ''}}{{$item['street'] or ''}}{{$item['buildingNo'] or ''}}</p>
+                                        <p class='tags clearfix'>
+                                             @foreach(@$item['tags'] as $k => $tag)
+                                                <span>{{@$tag}}</span>
+                                             @endforeach
+                                        </p>
+                                        <p class="fangdong clearfix">
+                                            <!-- <img src="../static/zf/markeylist/img/landlord.png">
+                                            <span>认证房东</span> -->
+                                             @if(!empty(@$item['govHouseNumber']))
+                                            <img src="//{{$DOMAIN_STATIC}}/govzf/web/zf/markeylist/img/icon_yhy_c556134.png">
+                                            <span class="yhy">已核验</span>
+                                             @endif
+                                            <img src="//{{$DOMAIN_STATIC}}/govzf/web/zf/markeylist/img/landlord_ff45291.png">
+                                             @if(isset($item['houseIsMortgage']))
+                                            <span class="is-pledge">{{$item['houseIsMortgage'] === 0 ? "无抵押" : "有抵押"}}</span>
+                                             @endif
+                                             @if(isset($item['brandName']))
+                                            <a class="to-company" style="font-size:14px;" href="{{$item['companyUrl']}}" target="_blank">{{$item['brandName']}}</a>
+                                             @endif
+                                            <!--非个人房源添加评分-->
+                                             @if($item['houseType'] !== 3)
+                                                <span class='score-show'>{{@$item['raters']}}评价/{{round(@$item['score'])}}分</span>
+                                             @endif
+
+
+                                        </p>
+                                        <!--  @if(!empty(@$item['logoUrl']) || !empty(@$item['brandName']))
+                                        <span class='brand'>
+								         @if(!empty(@$item['logoUrl']) && empty(@$item['brandName']))
+                                                    <img src='{{@$item[' logoUrl']}}'>
+                                                 @else
+                                                    {{@$item['brandName']}}
+                                                 @endif
+							        	</span>
+                                         @endif -->
+                                    </div>
+                                    <div class='detail-right'>
+                                        <p class='price'>
+                                            <strong>{{$item['price']}}</strong><span>元/月</span>
+                                        </p>
+                                    </div>
+                                </dd>
+                            </dl>
+                             @if(!empty($item['traffic']))
+                                <?php
+                                if ($item['traffic']['trafficType'] == '1') {
+                                    $type = 'icon-surrounding_metro';
+                                }
+                                if ($item['traffic']['trafficType'] == '2') {
+                                    $type = 'icon-bike_ic';
+                                }
+                                if ($item['traffic']['trafficType'] == '3') {
+                                    $type = 'icon-walk_ic';
+                                }
+                                if ($item['traffic']['trafficType'] == '4') {
+                                    $type = 'icon-car_ic';
+                                }
+
+                                ?>
+                                <p class='line icon iconfont {{@$type}}'>
+                                    <span class='time'>{{@$item['traffic']['trafficTime']}}</span>
+                                    <span class='trafficType'>{{@$item['traffic']['distance']}}</span>
+                                </p>
+                             @endif
+                        </li>
+                     @endforeach
+                </ul>
+                 @if(empty(@$aData['houseList']['total']))
+                    <div class='no-info'>
+                        <img src='//{{$DOMAIN_STATIC}}/govzf/web/common/no_rent_2cdd999.png'/>
+                        <p>
+                            没有找到符合条件的房源，换个条件试试呗
+                        </p>
+                    </div>
+                 @endif
+            </div>
+            <div class='pager-list' id='J_pagenation'>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    window.configPager = {
+        currentPage: "{{@$aData['houseList']['page']}}",
+        totalPage: "{{@$aData['houseList']['maxPage']}}",
+        pageSize: "{{@$aData['houseList']['pageSize']}}"
+    };
+
+    require.async('web:static/zf/markeylist/markeylist.js');
+</script> 
+@widget('web:footer/footer')

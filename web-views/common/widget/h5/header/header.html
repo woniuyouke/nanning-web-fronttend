@@ -1,0 +1,132 @@
+<?php
+$modules = array();
+$configure = array();
+foreach ($moduleConfigData['module'] as $value) {
+    $value['open'] = $value['open'] === 'TRUE' ? true : false;
+    $modules[$value['name']] = $value;
+};
+
+foreach ($moduleConfigData['configure'] as $value) {
+
+    $configure[$value['name']] = $value;
+};
+
+$_SERVER['F_GlobalData'] = array(
+    'configure' => array(
+        'lanlnt' =>$configure['all.latitudeAndLongitude'],
+        'webApplyClaimUrl' =>$configure['web.policyInfo'],
+        'h5ApplyClaimUrl' =>$configure['h5.policyInfo'],
+        'logo' =>$configure['all.logo'],
+        'webBanner' =>$configure['web.banner'],
+        'h5Banner' =>$configure['h5.banner'],
+        'fullName' =>$configure['all.platformName'],
+        'shortName' =>$configure['all.platformShortName'],
+        'contractUrl' =>$configure['all.contractInfo'],
+    ),
+    'moduleConfig' => array(
+        'publishHouse' => $modules['smart-city.g.private-housing-publish']['open'], //房源发布(C端个人房源发布)
+        /*新闻*/
+        'marketNews' => $modules['smart-city.housing-market-news']['open'], //市场信息展示
+        'policyNews' => $modules['smart-city.policy-release']['open'], //政策发布
+        /*市场房源*/
+        'houseInfo' => $modules['smart-city.market-housing-list']['open'], //房源信息展示
+        'orderHouse' => $modules['smart-city.house-view-booking']['open'], //预约看房
+        'C2COrderHouse' => $modules['smart-city.c2c.house-view-booking']['open'],//C端预约看房
+        'followMarketHouse' => $modules['smart-city.house-favourite']['open'], //市场房源收藏
+        'searchMarketHouse' => $modules['smart-city.basic-house-finding']['open'], //便捷找房
+        'map' => $modules['smart-city.house-finding-by-map']['open'],//地图找房
+        'commuting' => $modules['smart-city.house-finding-by-commuting']['open'], //通勤找房
+        /*中介服务*/
+        'companyInfo' => $modules['smart-city.organization-query']['open'], //企业/机构信息查询
+        'agentInfo' => $modules['smart-city.agent-query']['open'],//经纪人信息查询
+        /*公租房*/
+        'noticeNews' => $modules['smart-city.publicity-information']['open'],//公示信息
+        'policyPublicNews' => $modules['smart-city.policy-release']['open'],//公租房政策发布
+        'publicRental' => $modules['smart-city.public-rental-housing-list']['open'], //公租房信息展示
+        'followPublicRental' => $modules['smart-city.project-favourite']['open'], //公租房收藏
+        'searchPublicRental' => true, //公租房基础找房
+        'mapSearchPublicRental' => $modules['smart-city.public-rental-house-finding-by-map']['open'], //公租房地图找房
+        'applyPublicRental' => $modules['smart-city.apply-accreditation']['open'], //资格申请
+        'publicRentalProcess' => $modules['smart-city.application-progress-enquiry']['open'], //公租房申请进度查询
+        /*电话*/
+        'tel' => $modules['smart-city.call-service']['open'], //电话
+        /*交易*/
+        'C2BSign' => $modules['smart-city.c2b.sign-contract-online']['open'], //C2B签约
+        'C2CSign' => $modules['smart-city.c2c.sign-contract-online']['open'], //C2C签约
+        'C2BUnrent' => $modules['smart-city.c2b.tenancy-manage']['open'], //C2B退租
+        'C2CUnrent' => $modules['smart-city.c2c.tenancy-manage']['open'], //C2C退租
+        'contract' => $modules['smart-city.contract-recording']['open'], //合同
+        'C2BDeal' => $modules['smart-city.c2b.trade-online']['open'], //C2B交易
+        'C2CDeal' => true, //C2C交易
+        /*帐号*/
+        'account' => $modules['smart-city.account-settings']['open'],//账户设置
+        'nameCertification' => $modules['smart-city.real-name-verify']['open'],//实名认证
+        'realPersonCertification' => $modules['smart-city.bio-tech-verify']['open'],//实人认证
+
+    ),
+    'nav' => array(
+        'marketHousing' => $modules['smart-city.navigation.market-housing']['open'],//市场房源
+        'publicRentalHousing' => $modules['smart-city.navigation.public-rental-housing']['open'],//公租房
+        'policyNews' => $modules['smart-city.navigation.policy-news']['open'], //政策发布
+        'publicity' => $modules['smart-city.navigation.publicity']['open'],//公示公告
+        'insurance' => $modules['smart-city.navigation.insurance']['open'],//生活保险
+        'convenience' => $modules['smart-city.navigation.convenience']['open'],//便民服务
+    ),
+    'web' => array(),
+    /*h5首页配置*/
+    'h5' => array(
+        'marketHousing'=>$modules['smart-city.h5.homepage.public-rental-housing']['open'],//市场房源
+        'map'=>$modules['smart-city.h5.homepage.house-finding-by-map']['open'],//地图找房
+        'commuting'=>$modules['smart-city.h5.homepage.house-finding-by-commuting']['open'],//通勤找房
+        'apply'=>$modules['smart-city.h5.homepage.apply-accreditation']['open'],//资格申请
+        'resultEnquiry'=>$modules['smart-city.h5.homepage.waiting-result-enquiry']['open'],//轮候结果查询
+        'publicity'=>$modules['smart-city.h5.homepage.publicity-information']['open'],//公示公告
+        'publishHousing'=>$modules['smart-city.h5.homepage.publish-house']['open'],//我要发房
+        'payRentOnline'=>$modules['smart-city.h5.homepage.pay-rent-online']['open'],//在线交租
+        'privateHousing'=>$modules['smart-city.h5.homepage.private-housing']['open'],//个人房源
+        'myFollowing'=>$modules['smart-city.h5.homepage.eyes-on']['open'],//我的关注
+        'insurance'=>$modules['smart-city.h5.homepage.insurance']['open'],//生活保险
+        'convenience'=>$modules['smart-city.h5.homepage.convenience']['open'],//便民服务
+    ),
+);
+?>
+    <!Doctype html><head><?php $configure = $_SERVER['F_GlobalData']['configure'] ?><meta http-equiv="Content-Type" content="text/html; charset=@yield('charset', 'utf-8')"/><title>{{$configure['fullName']['value'] or ''}}</title><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta content="no" name="apple-mobile-web-app-capable"><meta content="yes" name="apple-touch-fullscreen"><meta content="telephone=no" name="format-detection">  @if(isset($aData['sUserscalable']) && $aData['sUserscalable'] == 'yes' )<meta name="viewport"
+              content="initial-scale=1, maximum-scale=2.0, minimum-scale=1, user-scalable=$aData['sUserscalable'] ">  @else<meta name="viewport" content="initial-scale=1, maximum-scale= 1, minimum-scale=1, user-scalable=no">  @endif     @if(empty($metaWebUrl) && empty($noMeta))<meta name="applicable-device" content="mobile"><meta name="location"
+              content="province={{$headerData['sCurrentCityName']}};city={{$headerData['sCurrentCityName']}}">  @endif     @if(!empty($metaWebUrl))<link rel="canonical" href="{{ $metaWebUrl }}">  @endif<meta name="keywords" content="{{$configure['fullName']['value'] or ''}}"/><meta name="description" content="{{$configure['fullName']['value'] or ''}}"><meta property="wb:webmaster" content="a4a189bbb75090ea"/><script type="text/javascript" head>
+
+     
+        window.comConfig = {
+            baseDomain: "{{ $pub['baseDomain'] ? $pub['baseDomain'] : '' }}",
+            <?php if(isset($reRem) && !empty($reRem)) {?>
+            reRem: '<?= $reRem ?>'
+            <?php } ?>
+        };
+    </script><link rel="Shortcut Icon" href="//{{$DOMAIN_STATIC}}/govzf/common/img/favicon_9d8cf39.ico"/>
+@include('common._static_', ['type' => 'head'])
+</head><script type="text/javascript">
+
+    var myHeader = {
+        config:<?php echo json_encode($xinlong["headSideMenu"]); ?>,
+        configure:<?php echo json_encode($moduleConfigData['configure']); ?>,
+    
+    }
+
+
+    window.config = {
+        'aURL': {
+            'sDFSUpd': '<?=@$globalData["sDFSUpd"]?>',
+            'sStaticDomain': '<?=@$globalData["sStaticDomain"]?>',
+            'sDFSViewDomain': '<?=@$globalData["sDFSViewDomain"]?>',
+            'sMemberDomain': '<?=@$globalData["sMemberDomain"]?>',
+            'sDFSRootDomain': '<?=@$globalData["sDFSRootDomain"]?>',
+            'sStaticRoot': '<?=@$globalData["sStaticRoot"]?>'
+        }
+    };
+</script><script>
+    ;(function () {
+        var src = 'https://cdn.bootcss.com/eruda/1.5.4/eruda.min.js';
+        if (!/_debug=1/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;
+        document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+        document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
+    })();    
+</script><body><?php $pgId = isset($pageId) ? $pageId : $globalData['sPGID']; ?><span id="J_page_msg" data-pageid="{{ $pgId }}" data-servertime="{{$globalData['iPrsTime']}}"></span>

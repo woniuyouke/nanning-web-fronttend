@@ -1,0 +1,30 @@
+@widget('web:header/header')<div class='user-wrapper clearfix'>  @widget('web:usersider/index')<div class='user-right'><div class="account-wrapper"><h2>账户设置</h2><div class="account-content account-detail-wrapper"><p><label>手机号码</label><span class="content">当前绑定手机：{{$globalData['userInfo']['accountInfo']['mobile']}}</span><span class="status"><em class="iconfont icon-checkbox_selected"></em>已绑定</span><a href='{{$xinlong["headSideMenu"]["accountChMobAcUrl"] or ""}}'>修改</a></p><p><label>实名认证</label><span class="content">绑定身份信息提高安全级别</span><span class="status auth_status"><em class="iconfont icon-checkbox_selected"></em>已认证</span><a href="javascript:;" id="auth">查看</a></p><p><label>登录密码</label><span class="content">用于在网站登录时输入的密码</span><span class="status"><em class="iconfont icon-checkbox_selected"></em>已设置</span><a href="{{$xinlong["headSideMenu"]["resetLpUrl"] or ""}}">修改</a>
+        </p>
+        <!--<p>-->
+          <!--<label>支付密码</label>-->
+          <!--<span class="content">用于支付房租时输入的密码</span>-->
+          <!--<span class="status pay"><em class="iconfont icon-alert_failure"></em><span id='pay_status'>未设置</span></span>-->
+          <!--<a href='/pc/account/setPayPwd'>设置</a>-->
+        <!--</p>-->
+        <p>
+          <label>通信地址</label>
+          <span class="content">用于合同签订的个人通信地址</span>
+          <span class="status addr"><em class="iconfont icon-alert_failure"></em><span id='add_status'>未录入</span></span>
+          <a href='{{$xinlong["headSideMenu"]["accountAddrssUrl"] or ""}}'>修改</a>
+        </p>
+        <p>
+          <label>身份证照</label>
+          <span class="content">用于房源核验及备案的身份证明</span>
+          <span class="status addr"><em class="iconfont icon-alert_failure"></em><span id='add_status'>未录入</span></span>
+          <a href='/pc/user/idcardUpload' id="idcard">修改</a>
+        </p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var authinfoUrl = '{{$xinlong["headSideMenu"]["authinfoUrl"] or ""}}';
+  require.async('web:static/member/account/index/index.js')
+</script> 
+@widget('web:footer/footer')

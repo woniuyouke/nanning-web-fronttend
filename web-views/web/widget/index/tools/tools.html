@@ -1,0 +1,25 @@
+<?php
+$moduleConfig = $_SERVER['F_GlobalData']['moduleConfig'];
+$configure = $_SERVER['F_GlobalData']['configure'];
+//首页工具
+$tool = array(
+    array(
+        'title' =>'我要发房',        'show' => true,        'content' => '便捷发房，快速成交',        'key' => 'wyff',        'isBlank' => '',        'link' => 'pc/publishHouse/edit?id='    ),    array(        'title' => '地图找房',        'show' => true,        'content' => '为您精确定位，位置周边一览无余',        'key' => 'dtzf',        'isBlank' => '',        'link' => '/pc/map/rent'    ),    array(        'title' => '通勤找房',        'show' => true,        'content' => '上班住哪最方便，一键查询',        'key' => 'tqzf',        'isBlank' => '',        'link' => '#'    ),    array(        'title' => '租房百科',        'show' => true,        'content' => '租房动态，随时查看',        'key' => 'gsgg',        'isBlank' => '',        'link' => '/pc/moreNews/2'    ),    array(        'title' => '租赁排行榜',        'show' => true,        'content' => '租房排行，随时查看',        'key' => 'rank',        'isBlank' => '',        'link' => '/pc/rank'    ),);function getTools($tool){    $arr = [];    for ($i = 0; $i< count($tool); $i++) {
+        if($tool[$i]['show']){
+            array_push($arr,$tool[$i]);
+        }
+    }
+    //dump($arr);
+    return $arr;
+}
+getTools($tool);
+?><script>
+    var pageConfig = {
+        tools:<?php echo json_encode(getTools($tool)) ?>
+    }
+</script><div id="J_tool_container" class="section-split clearfix"><div class="content"></div></div><section class="aaz-tqzfform-box" id="J_aaz_tqzfform_page"><div class="content-wrap"><div class="content"><i class="icon iconfont icon-close_ic" title="关闭"></i><div class="group" id="J_destination"><h3>公司地址</h3><input class="choose-des-btn" placeholder="请输入公司地址"/><input type="hidden" value="" id="J_destination_lng"><input type="hidden" value="" id="J_destination_lat"><div class="dest-suglist-box"><input type="hidden" id="J_cur_city"><ul id="J_bd_suglist"></ul><div class="no-result-tosug"><div class="no-suggest-title">未找到相关位置</div></div></div></div><div class="group" id="J_traf_way"><h3>交通方式</h3><div class="traf-way-box" id="J_traffic_style"></div></div><div class="group tqtime" id="J_tq_time"><h3>通勤时间<span class="tqtimetext"></span></h3></div><div class="group expectPrice" id="J_tq_price"><h3>期望价格</h3><div class="price-select" id="J_tq_priceSelect"></div><div class="price-range"><input type="text" class="range-input min-price" placeholder="最低租金"/><span style=" width: 16px; display: inline-block; text-align: center;">-</span><input type="text" class="range-input max-price" placeholder="最高租金"/>&nbsp;&nbsp;元</div></div><div class="validate-tips"></div><a href="javascript:void(0);" class="find-house-btn">立即找房</a></div></div></section><script>
+    	var _config = {
+		location:"<?php echo $configure['shortName']['value'] ?>"
+	}
+    require.async(['web:widget/index/tools/tools.js', 'web:static/zf/mapSearch/commute-form.js'])
+</script>

@@ -1,0 +1,5 @@
+<?php 
+  if(!isset($theme)) {
+    $theme = '';
+  }
+?> @if(isset($content))<div class="base-style {{$theme}}">  @if($theme === 'success')<i class="iconfont icon-checkbox_selected"></i>  @elseif($theme === 'fail')<i class="iconfont icon-alert_failure"></i>  @endif<div class="content">{{$content}}</div><div class="iconfont icon-close_ic"></div></div> @endif

@@ -1,0 +1,11 @@
+@widget('web:header/header')<?php $type = isset($_GET['type'])?strFilterHtml($_GET['type']):0;?><?php $cid = isset($_GET['cid'])?strFilterHtml($_GET['cid']):'';?><div class='user-wrapper clearfix'>  @widget('web:usersider/index')<div class='user-right'><ul class="bill-type-tab clearfix"><li class="bill-type-tab-item <?php echo $type==0?'active':'' ?>"><a class="bill-type-tab-btn" href="/pc/user/listOfBills?type=0">租客账单</a></li><li class="bill-type-tab-item <?php echo $type==1?'active':'' ?>"><a class="bill-type-tab-btn" href="/pc/user/listOfBills?type=1">房东账单</a></li></ul><div class='z_bill_list'></div><div style='display:none;' class='no-data' id='J_no_info'><p><img src="//{{$DOMAIN_STATIC}}/govzf/web/member/user/schedule/Rectangle 10@2x_0f0dd95.png"></p><p>您还没有账单<span id="J_type_name"></span></p></div></div></div><div class="dialog-wrapper authorization-dialog" id="J_authorization_dialog"><a class="close-btn iconfont icon-close_ic"></a><p class="dialog-content"><span class="title">壹钱包授权</span>尊敬的用户您好，使用平台在线支付、提现等功能需要开通壹钱包账户。请确认是否同意将本人的姓名，手机号，身份证号提供给壹钱包以开通该功能。</p><p class="dialog-btn-row"><a class="btn btn-heightlight" id="J_agree">同意</a><a class="btn btn-gray">取消</a></p></div><div class="dialog-wrapper payByH5-dialog" id="J_payByH5_dialog"><a class="close-btn iconfont icon-close_ic"></a><p class="dialog-content"><p class="title">账单支付</p><div class="qrcode-wrapper"><div class="qrcode-img" id="J_payByH5_qrcode" ></div><p class="qrcode-desc">请扫描二维码完成支付</p></div></p></div><div class="dialog-wrapper serial-dialog" id="J_serial_dialog"><a class="close-btn iconfont icon-close_ic"></a><div class="serial-wrapper"></div></div><div id="test-qrcode"></div><script>
+
+    window.curRentType = <?php echo $type;?>;
+    window.pageNo = <?php echo isset($_GET['pageNo'])?strFilterHtml($_GET['pageNo']):1; ?>;
+    
+    <?php if($cid){ ?>
+        window.curcid = <?php echo $cid;?>;
+    <?php } ?>
+    
+    require.async(['web:static/member/user/bisiness/billList.js'])
+</script> @widget('web:footer/footer')
