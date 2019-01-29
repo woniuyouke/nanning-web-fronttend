@@ -1,0 +1,1 @@
+define("web:static/news/detail.js",function(t){"use strict";t.async(["common:components/ui/zepto/zepto.js"],function(t){var n={init:function(){var n=t("#J_news_detail_content_data").attr("data");t("#J_news_detail_content").html(n)}};n.init()})});

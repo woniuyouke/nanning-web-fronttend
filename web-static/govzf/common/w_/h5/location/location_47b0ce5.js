@@ -1,0 +1,1 @@
+define("common:widget/h5/location/location.js",function(){});

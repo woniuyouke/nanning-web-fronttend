@@ -1,0 +1,9 @@
+{
+  "name": "h5",
+  "type": "lothar",
+  "version": "0.0.1",
+  "dependencies": {
+    "fis-parser-babel-5.x": "^1.4.0",
+    "fis3-preprocessor-autoprefixer": "^0.1.1"
+  }
+}

@@ -1,0 +1,1 @@
+define("common:components/ui/showErrorMsg/showErrorMsg.js",function(o){function s(o){o.msg?n.show(o.msg):o.fieldErrors[0].msg&&n.show(o.fieldErrors[0].msg)}var n=(o("common:components/ui/zepto/zepto.js"),o("common:components/ui/tips/tips.js"));return s});

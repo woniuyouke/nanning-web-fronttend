@@ -1,0 +1,1 @@
+define("common:components/ui/util/storage.js",function(e,o,t){var r={checkLS:function(){var e=!0;try{localStorage.setItem("isPrivateMode","1"),localStorage.removeItem("isPrivateMode")}catch(o){e=!1}return window.localStorage||(e=!1),e}};t.exports=r});

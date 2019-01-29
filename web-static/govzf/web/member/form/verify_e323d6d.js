@@ -1,0 +1,1 @@
+define("web:static/member/form/verify.js",function(e,r,t){"use strict";Object.defineProperty(r,"__esModule",{value:!0});var u={isNull:function(e){if(null==e)return!0;if(""==e)return!0;if(void 0==e)return!0;var r=/^[ ]+$/;return r.test(e)}};r["default"]=u,t.exports=r["default"]});

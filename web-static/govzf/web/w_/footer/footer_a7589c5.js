@@ -1,0 +1,1 @@
+define("web:widget/footer/footer.js",function(o){"use strict";o.async(["common:components/jquery/jquery.js"],function(o){o(function(){o("#J_operator_help").on("click",function(){window.open(helpPdfUrl)})})})});

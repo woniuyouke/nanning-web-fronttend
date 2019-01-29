@@ -1,0 +1,8 @@
+{
+  "name": "common",
+  "type": "lothar",
+  "version": "0.0.1",
+  "dependencies": {
+    "fis3-preprocessor-autoprefixer": "^0.1.1"
+  }
+}

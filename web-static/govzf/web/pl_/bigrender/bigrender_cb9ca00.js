@@ -1,0 +1,1 @@
+define("web:pagelet/bigrender/bigrender.js",function(){console.log("bigrender loaded")});

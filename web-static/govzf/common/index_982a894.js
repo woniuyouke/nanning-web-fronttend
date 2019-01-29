@@ -1,0 +1,1 @@
+define("common:static/index.js",function(){console.log("page index sync loaded")});

@@ -1,0 +1,1 @@
+define("web:components/test/index.js",function(){"use strict";console.log("components test loaded")});

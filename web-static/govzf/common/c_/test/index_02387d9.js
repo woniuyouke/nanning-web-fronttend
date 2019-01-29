@@ -1,0 +1,1 @@
+define("common:components/test/index.js",function(){console.log("components test loaded")});

@@ -1,0 +1,1 @@
+define("common:components/ui/jumpUrlWithReturn/jumpUrlWithReturn.js",function(n){function o(n){var o=r("returnUrl")?n+"?returnUrl="+encodeURIComponent(r("returnUrl")):n;window.location=o}var r=(n("common:components/ui/zepto/zepto.js"),n("common:components/ui/getQueryString/getQueryString.js"));return o});

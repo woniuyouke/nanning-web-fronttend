@@ -1,0 +1,1 @@
+define("common:components/pcUI/datepicker/datepicker.js",function(e,n,o){!function(){"object"==typeof o&&"object"==typeof o.exports?o.exports=e("common:components/pcUI/calendar/calendar.js"):window.jQuery.fn.datepicker=window.jQuery.fn.calendar}()});
